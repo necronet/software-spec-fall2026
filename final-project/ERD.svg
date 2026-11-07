@@ -1,0 +1,1804 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1680" height="8677" viewBox="0 0 1680 8677" role="img" aria-labelledby="title description" font-family="DejaVu Sans, Arial, sans-serif">
+<title id="title">Pozool Stays ERD</title>
+<desc id="description">Pozool Stays PostgreSQL entity relationship diagram with a rental lifecycle overview and seven detailed domain panels. It covers all 60 tables and 104 declared foreign keys in the supplied structure.sql. The guest join link is inferred and dashed.</desc>
+
+<defs>
+  <marker id="many0" viewBox="0 0 30 16" refX="29" refY="8" markerWidth="30" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+    <path d="M27 2L18 8L27 14" fill="none" stroke="#536a82" stroke-width="1.65"/>
+    <circle cx="11" cy="8" r="3.4" fill="#fff" stroke="#536a82" stroke-width="1.55"/>
+  </marker>
+  <marker id="one0" viewBox="0 0 30 16" refX="29" refY="8" markerWidth="30" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+    <path d="M24 2V14" fill="none" stroke="#536a82" stroke-width="1.65"/>
+    <circle cx="15" cy="8" r="3.4" fill="#fff" stroke="#536a82" stroke-width="1.55"/>
+  </marker>
+  <marker id="one1" viewBox="0 0 30 16" refX="29" refY="8" markerWidth="30" markerHeight="16" markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+    <path d="M24 2V14M17 2V14" fill="none" stroke="#536a82" stroke-width="1.65"/>
+  </marker>
+</defs>
+
+<rect x="0" y="0" width="1680" height="965" rx="0" fill="#fff" stroke="none" stroke-width="1.4"/>
+<text x="48" y="43" font-size="15" font-weight="700" fill="#4a6379" text-anchor="start" letter-spacing="2.5">POSTGRESQL SCHEMA</text>
+<text x="47" y="96" font-size="51" font-weight="700" fill="#14283c" text-anchor="start" letter-spacing="-1">Pozool Stays ERD</text>
+<text x="49" y="130" font-size="19" font-weight="400" fill="#4a6379" text-anchor="start" letter-spacing="0">Core rental model from structure.sql</text>
+<rect x="1269" y="63" width="363" height="43" rx="5" fill="#fff" stroke="#a9b9c9" stroke-width="1.4"/>
+<text x="1450.5" y="91" font-size="16" font-weight="700" fill="#20364d" text-anchor="middle" letter-spacing="0">60 tables  /  104 declared foreign keys</text>
+<rect x="48" y="371" width="780" height="488" rx="10" fill="#fff" stroke="#93a4b7" stroke-width="1.7"/>
+<rect x="71" y="384" width="37" height="25" rx="4" fill="#243b53" stroke="none" stroke-width="1.4"/>
+<text x="89.5" y="402" font-size="13" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="0">01</text>
+<text x="121" y="404" font-size="23" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">Short-term rentals</text>
+<path d="M48 422L828 422" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<rect x="852" y="371" width="780" height="488" rx="10" fill="#fff" stroke="#93a4b7" stroke-width="1.7"/>
+<rect x="875" y="384" width="37" height="25" rx="4" fill="#243b53" stroke="none" stroke-width="1.4"/>
+<text x="893.5" y="402" font-size="13" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="0">02</text>
+<text x="925" y="404" font-size="23" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">Long-term rentals</text>
+<path d="M852 422L1632 422" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<path d="M840 258V216" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one1)"/>
+<path d="M199 451V427H388V364H765V337" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one1)"/>
+<path d="M1008 451V427H1214V364H915V337" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one1)"/>
+<path d="M199 587V533" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one1)"/>
+<path d="M199 747V667" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one1)"/>
+<path d="M548 484H508V472H322" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one1)"/>
+<path d="M548 566H470V492H322" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one1)"/>
+<path d="M548 648H432V512H322" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one1)"/>
+<path d="M398 747V637H322" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one1)"/>
+<path d="M1008 587V533" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one1)"/>
+<path d="M1008 747V667" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one0)"/>
+<path d="M1250 747V643H1146" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one1)"/>
+<path d="M1406 787H1470" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one1)"/>
+<path d="M1146 607H1220V567H1112V587" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one0)"/>
+<path d="M594 787H656" fill="none" stroke="#536a82" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" marker-start="url(#many0)" marker-end="url(#one0)" stroke-dasharray="6 4"/>
+<rect x="690" y="149" width="300" height="67" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="691" y="150" width="298" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M691 184L989 184" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="703" y="173" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">companies</text>
+<text x="703" y="204" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id</text>
+<rect x="690" y="258" width="300" height="79" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="691" y="259" width="298" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M691 293L989 293" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="703" y="282" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">properties</text>
+<text x="703" y="313" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id   ·   FK company_id</text>
+<rect x="76" y="451" width="246" height="82" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="77" y="452" width="244" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M77 486L321 486" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="89" y="475" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">listings</text>
+<text x="89" y="506" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id   ·   FK property_id</text>
+<rect x="76" y="587" width="246" height="80" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="77" y="588" width="244" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M77 622L321 622" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="89" y="611" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">reservations</text>
+<text x="89" y="642" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id   ·   FK listing_id</text>
+<rect x="76" y="747" width="246" height="80" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="77" y="748" width="244" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M77 782L321 782" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="89" y="771" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">payments</text>
+<text x="89" y="802" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id   ·   FK reservation_id</text>
+<rect x="548" y="451" width="253" height="76" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="549" y="452" width="251" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M549 486L800 486" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="561" y="475" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">calendar_blocks</text>
+<text x="561" y="506" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id   ·   FK listing_id</text>
+<text x="561" y="522" font-size="13" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">POLY blockable_type, blockable_id</text>
+<rect x="548" y="533" width="253" height="66" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="549" y="534" width="251" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M549 568L800 568" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="561" y="557" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">calendar_prices</text>
+<text x="561" y="588" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id   ·   FK listing_id</text>
+<rect x="548" y="615" width="253" height="66" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="549" y="616" width="251" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M549 650L800 650" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="561" y="639" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">listing_calendars</text>
+<text x="561" y="670" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id   ·   FK listing_id</text>
+<rect x="358" y="747" width="236" height="80" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="359" y="748" width="234" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M359 782L593 782" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="371" y="771" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">guests_reservations</text>
+<text x="371" y="802" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id   ·   FK reservation_id</text>
+<text x="371" y="818" font-size="13" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">LINK guest_id</text>
+<rect x="656" y="747" width="145" height="80" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="657" y="748" width="143" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M657 782L800 782" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="669" y="771" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">guests</text>
+<text x="669" y="802" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id</text>
+<rect x="878" y="451" width="260" height="82" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="879" y="452" width="258" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M879 486L1137 486" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="891" y="475" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">property_listings</text>
+<text x="891" y="506" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id   ·   FK property_id</text>
+<rect x="878" y="587" width="268" height="80" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="879" y="588" width="266" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M879 622L1145 622" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="891" y="611" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">contracts</text>
+<text x="891" y="642" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id   ·   FK property_listing_id</text>
+<text x="891" y="658" font-size="13" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">FK renewed_from_contract_id</text>
+<rect x="878" y="747" width="260" height="80" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="879" y="748" width="258" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M879 782L1137 782" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="891" y="771" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">rental_payments</text>
+<text x="891" y="802" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id   ·   FK contract_id</text>
+<rect x="1160" y="747" width="246" height="80" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="1161" y="748" width="244" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M1161 782L1405 782" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="1173" y="771" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">contract_tenants</text>
+<text x="1173" y="802" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id   ·   FK contract_id, tenant_id</text>
+<rect x="1470" y="747" width="135" height="80" rx="6" fill="#fff" stroke="#8195a9" stroke-width="1.55"/>
+<rect x="1471" y="748" width="133" height="34" rx="5" fill="#edf1f5" stroke="none" stroke-width="1.4"/>
+<path d="M1471 782L1604 782" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="1483" y="771" font-size="17" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">tenants</text>
+<text x="1483" y="802" font-size="14" font-weight="400" fill="#3d566d" text-anchor="start" letter-spacing="0">PK id</text>
+<text x="1232" y="592" font-size="14" font-weight="700" fill="#4a6379" text-anchor="start" letter-spacing="0">Renewed from</text>
+<path d="M48 878L1632 878" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<path d="M48 903L99 903" fill="none" stroke="#536a82" stroke-width="1.65"/>
+<text x="112" y="908" font-size="15" font-weight="400" fill="#20364d" text-anchor="start" letter-spacing="0">Declared foreign key</text>
+<path d="M352 903H403" fill="none" stroke="#536a82" stroke-width="1.65" stroke-dasharray="6 4"/>
+<text x="416" y="908" font-size="15" font-weight="400" fill="#20364d" text-anchor="start" letter-spacing="0">Inferred guest link</text>
+<text x="1632" y="908" font-size="15" font-weight="400" fill="#20364d" text-anchor="end" letter-spacing="0">Circle = optional  ·  Bar = one  ·  Crow’s foot = many</text>
+<text x="48" y="940" font-size="15" font-weight="400" fill="#4a6379" text-anchor="start" letter-spacing="0">The overview highlights the rental lifecycle. The detailed panels show company ownership, cross-domain references and supporting tables.</text>
+<g id="detail-1" transform="translate(0 965)">
+<rect x="0" y="0" width="1680" height="1272" rx="0" fill="#fff" stroke="none" stroke-width="1.4"/>
+<rect x="48" y="14" width="1584" height="1250" rx="10" fill="#fff" stroke="#93a4b7" stroke-width="1.6"/>
+<rect x="72" y="34" width="44" height="27" rx="4" fill="#243b53" stroke="none" stroke-width="1.4"/>
+<text x="94" y="53" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="0">01</text>
+<text x="133" y="57" font-size="28" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">Rental lifecycle</text>
+<text x="73" y="88" font-size="16" font-weight="400" fill="#4a6379" text-anchor="start" letter-spacing="0">Listings, reservations, guests, leases and payments</text>
+<text x="1608" y="87" font-size="16" font-weight="400" fill="#4a6379" text-anchor="end" letter-spacing="0">14 schema tables</text>
+<path d="M48 106L1632 106" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<g transform="translate(106.05 123) scale(1.0500) translate(-1.0 -1.0)">
+<g xmlns="http://www.w3.org/2000/svg" id="panel0-graph0" class="graph" transform="scale(1 1) rotate(0) translate(5.44 1064.84)">
+<title>erd</title>
+
+<g id="panel0-node1" class="node">
+<title>properties</title>
+<polygon fill="white" stroke="none" points="868.43,-466 868.43,-586.4 1092.4,-586.4 1092.4,-466 868.43,-466" />
+<polygon fill="#243b53" stroke="none" points="869.43,-552.2 869.43,-585.4 1091.4,-585.4 1091.4,-552.2 869.43,-552.2" />
+<text xml:space="preserve" text-anchor="start" x="876.43" y="-565" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">properties</text>
+<text xml:space="preserve" text-anchor="start" x="876.43" y="-536" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="905.51" y="-533.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="876.43" y="-507.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="905.51" y="-504.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">address_id</text>
+<text xml:space="preserve" text-anchor="start" x="876.43" y="-479.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="905.51" y="-476.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="868.43,-466 868.43,-586.4 1092.4,-586.4 1092.4,-466 868.43,-466" />
+</g>
+
+<g id="panel0-node15" class="node">
+<title>addresses</title>
+<polygon fill="white" stroke="none" points="1149.4,-494.4 1149.4,-558 1388.93,-558 1388.93,-494.4 1149.4,-494.4" />
+<polygon fill="#edf1f5" stroke="none" points="1150.4,-523.8 1150.4,-557 1387.93,-557 1387.93,-523.8 1150.4,-523.8" />
+<text xml:space="preserve" text-anchor="start" x="1157.4" y="-536.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#263a50">addresses</text>
+<text xml:space="preserve" text-anchor="start" x="1157.4" y="-507.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">REF</text>
+<text xml:space="preserve" text-anchor="start" x="1192.77" y="-504.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">Table detailed in another panel</text>
+<polygon fill="none" stroke="#aab8c5" points="1149.4,-494.4 1149.4,-558 1388.93,-558 1388.93,-494.4 1149.4,-494.4" />
+</g>
+
+<g id="panel0-edge5" class="edge">
+<title>properties-&gt;addresses</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M1110.5,-526.2C1120.55,-526.2 1130.69,-526.2 1140.73,-526.2" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="1101.75,-526.2 1092.75,-522.15 1096.78,-526.2 1093.22,-526.2 1093.22,-526.2 1093.22,-526.2 1096.78,-526.2 1092.75,-530.25 1101.75,-526.2" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="1107.76" cy="-526.2" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="1148.62,-521.7 1148.62,-530.7 1146.82,-530.7 1146.82,-521.7 1148.62,-521.7" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="1149.52,-526.2 1145.02,-526.2" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="1144.12,-521.7 1144.12,-530.7 1142.32,-530.7 1142.32,-521.7 1144.12,-521.7" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="1145.02,-526.2 1140.52,-526.2" />
+</g>
+
+<g id="panel0-node2" class="node">
+<title>listings</title>
+<polygon fill="white" stroke="none" points="587.45,-626 587.45,-746.4 811.43,-746.4 811.43,-626 587.45,-626" />
+<polygon fill="#243b53" stroke="none" points="588.45,-712.2 588.45,-745.4 810.43,-745.4 810.43,-712.2 588.45,-712.2" />
+<text xml:space="preserve" text-anchor="start" x="595.45" y="-725" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">listings</text>
+<text xml:space="preserve" text-anchor="start" x="595.45" y="-696" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="624.53" y="-693.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="595.45" y="-667.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="624.53" y="-664.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_id</text>
+<text xml:space="preserve" text-anchor="start" x="595.45" y="-639.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="624.53" y="-636.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="587.45,-626 587.45,-746.4 811.43,-746.4 811.43,-626 587.45,-626" />
+</g>
+
+<g id="panel0-edge1" class="edge">
+<title>listings-&gt;properties</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M820.73,-617.21C836.15,-608.37 851.88,-599.35 867.16,-590.58" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="813.33,-621.46 803.51,-622.42 809.02,-623.93 805.93,-625.7 805.93,-625.7 805.93,-625.7 809.02,-623.93 807.53,-629.45 813.33,-621.46" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="818.54" cy="-618.47" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="871.6,-582.85 876.08,-590.65 874.52,-591.55 870.04,-583.74 871.6,-582.85" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="874.62,-586.3 870.72,-588.54" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="867.7,-585.09 872.17,-592.89 870.61,-593.79 866.13,-585.98 867.7,-585.09" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="870.72,-588.54 866.81,-590.78" />
+</g>
+
+<g id="panel0-node3" class="node">
+<title>listing_calendars</title>
+<polygon fill="white" stroke="none" points="299.29,-939 299.29,-1059.4 523.27,-1059.4 523.27,-939 299.29,-939" />
+<polygon fill="#243b53" stroke="none" points="300.29,-1025.2 300.29,-1058.4 522.27,-1058.4 522.27,-1025.2 300.29,-1025.2" />
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-1038" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">listing_calendars</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-1009" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-1006.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-980.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-977.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">listing_id</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-952.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-949.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="299.29,-939 299.29,-1059.4 523.27,-1059.4 523.27,-939 299.29,-939" />
+</g>
+
+<g id="panel0-edge10" class="edge">
+<title>listing_calendars-&gt;listings</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M523.51,-929.55C527.89,-926.81 530.45,-925.2 530.45,-925.2 530.45,-925.2 601.54,-824.06 651.23,-753.37" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="516.25,-934.09 506.47,-935.44 512.04,-936.73 509.02,-938.62 509.02,-938.62 509.02,-938.62 512.04,-936.73 510.77,-942.3 516.25,-934.09" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="521.34" cy="-930.91" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="652.07,-744.35 659.43,-749.53 658.39,-751 651.03,-745.82 652.07,-744.35" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="656.27,-746.2 653.68,-749.88" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="649.48,-748.03 656.84,-753.21 655.81,-754.68 648.44,-749.5 649.48,-748.03" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="653.68,-749.88 651.09,-753.56" />
+</g>
+
+<g id="panel0-node4" class="node">
+<title>calendar_prices</title>
+<polygon fill="white" stroke="none" points="299.29,-790 299.29,-910.4 523.27,-910.4 523.27,-790 299.29,-790" />
+<polygon fill="#243b53" stroke="none" points="300.29,-876.2 300.29,-909.4 522.27,-909.4 522.27,-876.2 300.29,-876.2" />
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-889" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">calendar_prices</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-860" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-857.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-831.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-828.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-803.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-800.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">listing_id</text>
+<polygon fill="none" stroke="#8295a8" points="299.29,-790 299.29,-910.4 523.27,-910.4 523.27,-790 299.29,-790" />
+</g>
+
+<g id="panel0-edge13" class="edge">
+<title>calendar_prices-&gt;listings</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M532.85,-781.1C550.49,-770.99 568.61,-760.61 586.08,-750.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="525.43,-785.36 515.6,-786.32 521.11,-787.83 518.02,-789.6 518.02,-789.6 518.02,-789.6 521.11,-787.83 519.63,-793.34 525.43,-785.36" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="530.64" cy="-782.37" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="590.5,-742.87 594.98,-750.68 593.42,-751.58 588.94,-743.77 590.5,-742.87" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="593.52,-746.33 589.62,-748.57" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="586.6,-745.11 591.07,-752.92 589.51,-753.81 585.04,-746 586.6,-745.11" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="589.62,-748.57 585.71,-750.8" />
+</g>
+
+<g id="panel0-node5" class="node">
+<title>calendar_blocks</title>
+<polygon fill="white" stroke="none" points="292.11,-611.8 292.11,-760.6 530.45,-760.6 530.45,-611.8 292.11,-611.8" />
+<polygon fill="#243b53" stroke="none" points="293.11,-726.4 293.11,-759.6 529.45,-759.6 529.45,-726.4 293.11,-726.4" />
+<text xml:space="preserve" text-anchor="start" x="300.11" y="-739.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">calendar_blocks</text>
+<text xml:space="preserve" text-anchor="start" x="300.11" y="-710.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="343.55" y="-707.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="300.11" y="-681.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="343.55" y="-679" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="300.11" y="-653.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="343.55" y="-650.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">listing_id</text>
+<text xml:space="preserve" text-anchor="start" x="300.11" y="-625" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="343.55" y="-622.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">blockable_type, blockable_id</text>
+<polygon fill="none" stroke="#8295a8" points="292.11,-611.8 292.11,-760.6 530.45,-760.6 530.45,-611.8 292.11,-611.8" />
+</g>
+
+<g id="panel0-edge11" class="edge">
+<title>calendar_blocks-&gt;listings</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M548.21,-686.2C558.41,-686.2 568.66,-686.2 578.74,-686.2" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="539.79,-686.2 530.79,-682.15 534.82,-686.2 531.26,-686.2 531.26,-686.2 531.26,-686.2 534.82,-686.2 530.79,-690.25 539.79,-686.2" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="545.8" cy="-686.2" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="586.66,-681.7 586.66,-690.7 584.86,-690.7 584.86,-681.7 586.66,-681.7" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="587.56,-686.2 583.06,-686.2" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="582.16,-681.7 582.16,-690.7 580.36,-690.7 580.36,-681.7 582.16,-681.7" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="583.06,-686.2 578.56,-686.2" />
+</g>
+
+<g id="panel0-node6" class="node">
+<title>reservations</title>
+<polygon fill="white" stroke="none" points="299.29,-342 299.29,-462.4 523.27,-462.4 523.27,-342 299.29,-342" />
+<polygon fill="#243b53" stroke="none" points="300.29,-428.2 300.29,-461.4 522.27,-461.4 522.27,-428.2 300.29,-428.2" />
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-441" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">reservations</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-412" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-409.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-383.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-380.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-355.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-352.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">listing_id</text>
+<polygon fill="none" stroke="#8295a8" points="299.29,-342 299.29,-462.4 523.27,-462.4 523.27,-342 299.29,-342" />
+</g>
+
+<g id="panel0-edge6" class="edge">
+<title>reservations-&gt;listings</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M522.31,-472.03C527.41,-475.27 530.45,-477.2 530.45,-477.2 530.45,-477.2 595.35,-557.94 644.47,-619.06" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="515.1,-467.46 509.67,-459.21 510.9,-464.79 507.9,-462.88 507.9,-462.88 507.9,-462.88 510.9,-464.79 505.33,-466.05 515.1,-467.46" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="520.17" cy="-470.67" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="653.02,-622.51 646,-628.15 644.88,-626.74 651.89,-621.11 653.02,-622.51" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="650.08,-626.03 647.26,-622.52" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="650.2,-619 643.19,-624.64 642.06,-623.24 649.07,-617.6 650.2,-619" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="647.26,-622.52 644.44,-619.01" />
+</g>
+
+<g id="panel0-node7" class="node">
+<title>guests_reservations</title>
+<polygon fill="white" stroke="none" points="0,-477.8 0,-626.6 235.11,-626.6 235.11,-477.8 0,-477.8" />
+<polygon fill="#243b53" stroke="none" points="1,-592.4 1,-625.6 234.11,-625.6 234.11,-592.4 1,-592.4" />
+<text xml:space="preserve" text-anchor="start" x="8" y="-605.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">guests_reservations</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-576.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="48.21" y="-573.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-547.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="48.21" y="-545" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-519.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="48.21" y="-516.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">reservation_id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-491" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">LINK</text>
+<text xml:space="preserve" text-anchor="start" x="48.21" y="-488.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">guest_id  →  guests.id</text>
+<polygon fill="none" stroke="#8295a8" points="0,-477.8 0,-626.6 235.11,-626.6 235.11,-477.8 0,-477.8" />
+</g>
+
+<g id="panel0-edge9" class="edge">
+<title>guests_reservations-&gt;reservations</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M250.79,-484.2C264.34,-477.24 278.05,-470.19 291.45,-463.3" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="243.11,-488.16 233.26,-488.67 238.69,-490.43 235.52,-492.06 235.52,-492.06 235.52,-492.06 238.69,-490.43 236.96,-495.87 243.11,-488.16" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="248.45" cy="-485.41" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="296.43,-455.68 300.55,-463.68 298.95,-464.5 294.83,-456.5 296.43,-455.68" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="299.29,-459.27 295.29,-461.33" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="292.43,-457.74 296.55,-465.74 294.95,-466.56 290.83,-458.56 292.43,-457.74" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="295.29,-461.33 291.29,-463.38" />
+</g>
+
+<g id="panel0-node8" class="node">
+<title>guests</title>
+<polygon fill="white" stroke="none" points="299.29,-491.2 299.29,-583.2 523.27,-583.2 523.27,-491.2 299.29,-491.2" />
+<polygon fill="#243b53" stroke="none" points="300.29,-549 300.29,-582.2 522.27,-582.2 522.27,-549 300.29,-549" />
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-561.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">guests</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-532.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-530" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-504.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-501.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="299.29,-491.2 299.29,-583.2 523.27,-583.2 523.27,-491.2 299.29,-491.2" />
+</g>
+
+<g id="panel0-edge15" class="edge">
+<title>guests_reservations-&gt;guests</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" stroke-dasharray="5,2" d="M252.82,-545.3C264,-544.72 275.27,-544.14 286.36,-543.57" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="244.15,-545.74 234.95,-542.16 239.18,-546 235.63,-546.18 235.63,-546.18 235.63,-546.18 239.18,-546 235.37,-550.25 244.15,-545.74" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="250.14" cy="-545.43" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="298.16,-538.46 298.62,-547.45 296.83,-547.54 296.36,-538.55 298.16,-538.46" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="299.29,-542.91 294.8,-543.14" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="290.5" cy="-543.36" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel0-node9" class="node">
+<title>payments</title>
+<polygon fill="white" stroke="none" points="5.57,-328 5.57,-448.4 229.54,-448.4 229.54,-328 5.57,-328" />
+<polygon fill="#243b53" stroke="none" points="6.57,-414.2 6.57,-447.4 228.54,-447.4 228.54,-414.2 6.57,-414.2" />
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-427" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">payments</text>
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-398" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="42.64" y="-395.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-369.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="42.64" y="-366.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-341.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="42.64" y="-338.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">reservation_id</text>
+<polygon fill="none" stroke="#8295a8" points="5.57,-328 5.57,-448.4 229.54,-448.4 229.54,-328 5.57,-328" />
+</g>
+
+<g id="panel0-edge2" class="edge">
+<title>payments-&gt;reservations</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M247.29,-394.38C261.75,-395.07 276.44,-395.78 290.78,-396.46" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="238.72,-393.97 229.92,-389.49 233.75,-393.73 230.2,-393.56 230.2,-393.56 230.2,-393.56 233.75,-393.73 229.53,-397.58 238.72,-393.97" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="244.72" cy="-394.25" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="298.97,-392.35 298.54,-401.34 296.74,-401.26 297.17,-392.27 298.97,-392.35" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="299.65,-396.89 295.16,-396.68" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="294.47,-392.14 294.04,-401.13 292.24,-401.04 292.67,-392.05 294.47,-392.14" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="295.16,-396.68 290.66,-396.46" />
+</g>
+
+<g id="panel0-node10" class="node">
+<title>property_listings</title>
+<polygon fill="white" stroke="none" points="587.45,-392 587.45,-512.4 811.43,-512.4 811.43,-392 587.45,-392" />
+<polygon fill="#243b53" stroke="none" points="588.45,-478.2 588.45,-511.4 810.43,-511.4 810.43,-478.2 588.45,-478.2" />
+<text xml:space="preserve" text-anchor="start" x="595.45" y="-491" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">property_listings</text>
+<text xml:space="preserve" text-anchor="start" x="595.45" y="-462" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="624.53" y="-459.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="595.45" y="-433.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="624.53" y="-430.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_id</text>
+<text xml:space="preserve" text-anchor="start" x="595.45" y="-405.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="624.53" y="-402.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="587.45,-392 587.45,-512.4 811.43,-512.4 811.43,-392 587.45,-392" />
+</g>
+
+<g id="panel0-edge12" class="edge">
+<title>property_listings-&gt;properties</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M828.51,-486.17C838.92,-488.93 849.42,-491.72 859.78,-494.47" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="820.25,-483.98 812.59,-477.76 815.45,-482.71 812,-481.79 812,-481.79 812,-481.79 815.45,-482.71 810.51,-485.59 820.25,-483.98" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="826.06" cy="-485.52" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="868.72,-492.18 866.41,-500.88 864.67,-500.42 866.98,-491.72 868.72,-492.18" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="868.43,-496.76 864.08,-495.61" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="864.37,-491.03 862.06,-499.73 860.32,-499.26 862.63,-490.57 864.37,-491.03" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="864.08,-495.61 859.73,-494.45" />
+</g>
+
+<g id="panel0-node11" class="node">
+<title>contracts</title>
+<polygon fill="white" stroke="none" points="299.29,-6.8 299.29,-155.6 523.27,-155.6 523.27,-6.8 299.29,-6.8" />
+<polygon fill="#243b53" stroke="none" points="300.29,-121.4 300.29,-154.6 522.27,-154.6 522.27,-121.4 300.29,-121.4" />
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-134.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">contracts</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-105.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-102.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-76.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-74" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">renewed_from_contract_id</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-48.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-45.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-20" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-17.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_listing_id</text>
+<polygon fill="none" stroke="#8295a8" points="299.29,-6.8 299.29,-155.6 523.27,-155.6 523.27,-6.8 299.29,-6.8" />
+</g>
+
+<g id="panel0-edge7" class="edge">
+<title>contracts-&gt;property_listings</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M498.82,-168.34C516.82,-186.47 530.45,-200.2 530.45,-200.2 530.45,-200.2 603.91,-310.4 653.68,-385.05" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="492.78,-162.27 489.32,-153.03 489.28,-158.74 486.77,-156.21 486.77,-156.21 486.77,-156.21 489.28,-158.74 483.57,-158.74 492.78,-162.27" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="497.02" cy="-166.53" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="661.66,-388.91 654.17,-393.91 653.17,-392.41 660.66,-387.42 661.66,-388.91" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="658.42,-392.16 655.92,-388.42" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="659.16,-385.17 651.68,-390.16 650.68,-388.67 658.17,-383.67 659.16,-385.17" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="655.92,-388.42 653.42,-384.67" />
+</g>
+
+<g id="panel0-edge3" class="edge">
+<title>contracts-&gt;contracts</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M390.13,-172.69C394.74,-180.04 401.79,-184.6 411.28,-184.6 422.6,-184.6 430.44,-178.12 434.82,-168.15" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="387.33,-164.52 388.25,-154.69 385.72,-159.82 384.57,-156.44 384.57,-156.44 384.57,-156.44 385.72,-159.82 380.59,-157.31 387.33,-164.52" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="389.28" cy="-170.2" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="433.72,-155.23 442.39,-157.62 441.91,-159.36 433.24,-156.97 433.72,-155.23" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="438.29,-155.56 437.1,-159.9" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="435.95" cy="-164.04" rx="3.6" ry="3.6" />
+<text xml:space="preserve" text-anchor="middle" x="411.28" y="-187.6" font-family="DejaVu Sans" font-size="10.00" fill="#3d566d">renewed_from_contract_id</text>
+</g>
+
+<g id="panel0-node12" class="node">
+<title>contract_tenants</title>
+<polygon fill="white" stroke="none" points="5.57,-149.8 5.57,-298.6 229.54,-298.6 229.54,-149.8 5.57,-149.8" />
+<polygon fill="#243b53" stroke="none" points="6.57,-264.4 6.57,-297.6 228.54,-297.6 228.54,-264.4 6.57,-264.4" />
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-277.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">contract_tenants</text>
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-248.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="42.64" y="-245.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-219.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="42.64" y="-217" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">tenant_id</text>
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-191.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="42.64" y="-188.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-163" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="42.64" y="-160.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">contract_id</text>
+<polygon fill="none" stroke="#8295a8" points="5.57,-149.8 5.57,-298.6 229.54,-298.6 229.54,-149.8 5.57,-149.8" />
+</g>
+
+<g id="panel0-edge14" class="edge">
+<title>contract_tenants-&gt;contracts</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M245.36,-162.04C260.76,-154.49 276.44,-146.81 291.71,-139.32" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="237.76,-165.77 227.9,-166.09 233.3,-167.95 230.1,-169.52 230.1,-169.52 230.1,-169.52 233.3,-167.95 231.46,-173.36 237.76,-165.77" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="243.15" cy="-163.12" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="296.86,-131.78 300.82,-139.87 299.21,-140.66 295.25,-132.58 296.86,-131.78" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="299.65,-135.43 295.61,-137.41" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="292.82,-133.77 296.78,-141.85 295.17,-142.64 291.21,-134.56 292.82,-133.77" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="295.61,-137.41 291.57,-139.39" />
+</g>
+
+<g id="panel0-node13" class="node">
+<title>tenants</title>
+<polygon fill="white" stroke="none" points="299.29,-214.2 299.29,-306.2 523.27,-306.2 523.27,-214.2 299.29,-214.2" />
+<polygon fill="#243b53" stroke="none" points="300.29,-272 300.29,-305.2 522.27,-305.2 522.27,-272 300.29,-272" />
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-284.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">tenants</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-255.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-253" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="307.29" y="-227.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="336.37" y="-224.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="299.29,-214.2 299.29,-306.2 523.27,-306.2 523.27,-214.2 299.29,-214.2" />
+</g>
+
+<g id="panel0-edge4" class="edge">
+<title>contract_tenants-&gt;tenants</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M247.29,-240.09C261.75,-241.87 276.44,-243.68 290.78,-245.45" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="238.66,-239.02 230.22,-233.9 233.73,-238.41 230.19,-237.98 230.19,-237.98 230.19,-237.98 233.73,-238.41 229.23,-241.94 238.66,-239.02" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="244.62" cy="-239.76" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="299.31,-241.97 298.21,-250.9 296.42,-250.68 297.52,-241.75 299.31,-241.97" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="299.65,-246.55 295.18,-246" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="294.84,-241.42 293.74,-250.35 291.95,-250.13 293.06,-241.2 294.84,-241.42" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="295.18,-246 290.72,-245.45" />
+</g>
+
+<g id="panel0-node14" class="node">
+<title>rental_payments</title>
+<polygon fill="white" stroke="none" points="5.57,0 5.57,-120.4 229.54,-120.4 229.54,0 5.57,0" />
+<polygon fill="#243b53" stroke="none" points="6.57,-86.2 6.57,-119.4 228.54,-119.4 228.54,-86.2 6.57,-86.2" />
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-99" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">rental_payments</text>
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-70" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="42.64" y="-67.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-41.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="42.64" y="-38.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">contract_id</text>
+<text xml:space="preserve" text-anchor="start" x="13.57" y="-13.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="42.64" y="-10.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="5.57,0 5.57,-120.4 229.54,-120.4 229.54,0 5.57,0" />
+</g>
+
+<g id="panel0-edge8" class="edge">
+<title>rental_payments-&gt;contracts</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M247.29,-69.47C260.39,-70.41 273.67,-71.37 286.71,-72.3" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="238.7,-68.85 230.02,-64.16 233.75,-68.49 230.19,-68.24 230.19,-68.24 230.19,-68.24 233.75,-68.49 229.44,-72.24 238.7,-68.85" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="244.69" cy="-69.28" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="299.08,-68.68 298.43,-77.66 296.63,-77.53 297.28,-68.55 299.08,-68.68" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="299.65,-73.24 295.16,-72.91" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="290.87" cy="-72.6" rx="3.6" ry="3.6" />
+</g>
+</g>
+
+</g>
+</g>
+<g id="detail-2" transform="translate(0 2252)">
+<rect x="0" y="0" width="1680" height="970" rx="0" fill="#fff" stroke="none" stroke-width="1.4"/>
+<rect x="48" y="14" width="1584" height="948" rx="10" fill="#fff" stroke="#93a4b7" stroke-width="1.6"/>
+<rect x="72" y="34" width="44" height="27" rx="4" fill="#243b53" stroke="none" stroke-width="1.4"/>
+<text x="94" y="53" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="0">02</text>
+<text x="133" y="57" font-size="28" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">Accounts and configuration</text>
+<text x="73" y="88" font-size="16" font-weight="400" fill="#4a6379" text-anchor="start" letter-spacing="0">Company ownership, access and application setup</text>
+<text x="1608" y="87" font-size="16" font-weight="400" fill="#4a6379" text-anchor="end" letter-spacing="0">11 schema tables</text>
+<path d="M48 106L1632 106" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<g transform="translate(280.35 123) scale(1.0500) translate(-1.0 -1.0)">
+<g xmlns="http://www.w3.org/2000/svg" id="panel1-graph0" class="graph" transform="scale(1 1) rotate(0) translate(5.44 776.64)">
+<title>erd</title>
+
+<g id="panel1-node1" class="node">
+<title>companies</title>
+<polygon fill="white" stroke="none" points="0,-650.8 0,-771.2 126.42,-771.2 126.42,-650.8 0,-650.8" />
+<polygon fill="#243b53" stroke="none" points="1,-737 1,-770.2 125.42,-770.2 125.42,-737 1,-737" />
+<text xml:space="preserve" text-anchor="start" x="8" y="-749.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">companies</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-720.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="54.06" y="-718" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-692.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="54.06" y="-689.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">address_id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-664" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="54.06" y="-661.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">tax_id</text>
+<polygon fill="none" stroke="#8295a8" points="0,-650.8 0,-771.2 126.42,-771.2 126.42,-650.8 0,-650.8" />
+</g>
+
+<g id="panel1-node2" class="node">
+<title>addresses</title>
+<polygon fill="white" stroke="none" points="181.42,-665 181.42,-757 405.39,-757 405.39,-665 181.42,-665" />
+<polygon fill="#243b53" stroke="none" points="182.42,-722.8 182.42,-756 404.39,-756 404.39,-722.8 182.42,-722.8" />
+<text xml:space="preserve" text-anchor="start" x="189.42" y="-735.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">addresses</text>
+<text xml:space="preserve" text-anchor="start" x="189.42" y="-706.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="218.49" y="-703.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="189.42" y="-678.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="218.49" y="-675.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="181.42,-665 181.42,-757 405.39,-757 405.39,-665 181.42,-665" />
+</g>
+
+<g id="panel1-edge1" class="edge">
+<title>companies-&gt;addresses</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M144.15,-711C152.11,-711 160.31,-711 168.58,-711" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="135.73,-711 126.73,-706.95 130.76,-711 127.2,-711 127.2,-711 127.2,-711 130.76,-711 126.73,-715.05 135.73,-711" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="141.74" cy="-711" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="180.71,-706.5 180.71,-715.5 178.91,-715.5 178.91,-706.5 180.71,-706.5" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="181.61,-711 177.11,-711" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="172.81" cy="-711" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel1-node3" class="node">
+<title>users</title>
+<polygon fill="white" stroke="none" points="739.42,-305 739.42,-397 963.39,-397 963.39,-305 739.42,-305" />
+<polygon fill="#243b53" stroke="none" points="740.42,-362.8 740.42,-396 962.39,-396 962.39,-362.8 740.42,-362.8" />
+<text xml:space="preserve" text-anchor="start" x="747.42" y="-375.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">users</text>
+<text xml:space="preserve" text-anchor="start" x="747.42" y="-346.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="776.49" y="-343.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="747.42" y="-318.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="776.49" y="-315.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="739.42,-305 739.42,-397 963.39,-397 963.39,-305 739.42,-305" />
+</g>
+
+<g id="panel1-node4" class="node">
+<title>company_memberships</title>
+<polygon fill="white" stroke="none" points="0.47,-434 0.47,-526 343.39,-526 343.39,-434 0.47,-434" />
+<polygon fill="#243b53" stroke="none" points="1.47,-491.8 1.47,-525 342.39,-525 342.39,-491.8 1.47,-491.8" />
+<text xml:space="preserve" text-anchor="start" x="8.47" y="-504.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">company_memberships</text>
+<text xml:space="preserve" text-anchor="start" x="8.47" y="-475.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="37.55" y="-472.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="8.47" y="-447.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="37.55" y="-444.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id (0..1 per company)</text>
+<polygon fill="none" stroke="#8295a8" points="0.47,-434 0.47,-526 343.39,-526 343.39,-434 0.47,-434" />
+</g>
+
+<g id="panel1-node5" class="node">
+<title>company_feature_flags</title>
+<polygon fill="white" stroke="none" points="516.92,-619.8 516.92,-740.2 740.9,-740.2 740.9,-619.8 516.92,-619.8" />
+<polygon fill="#243b53" stroke="none" points="517.92,-706 517.92,-739.2 739.9,-739.2 739.9,-706 517.92,-706" />
+<text xml:space="preserve" text-anchor="start" x="524.92" y="-718.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">company_feature_flags</text>
+<text xml:space="preserve" text-anchor="start" x="524.92" y="-689.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="554" y="-687" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="524.92" y="-661.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="554" y="-658.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="524.92" y="-633" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="554" y="-630.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">feature_flag_id</text>
+<polygon fill="none" stroke="#8295a8" points="516.92,-619.8 516.92,-740.2 740.9,-740.2 740.9,-619.8 516.92,-619.8" />
+</g>
+
+<g id="panel1-node6" class="node">
+<title>feature_flags</title>
+<polygon fill="white" stroke="none" points="795.9,-634 795.9,-726 932.39,-726 932.39,-634 795.9,-634" />
+<polygon fill="#243b53" stroke="none" points="796.9,-691.8 796.9,-725 931.39,-725 931.39,-691.8 796.9,-691.8" />
+<text xml:space="preserve" text-anchor="start" x="803.9" y="-704.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">feature_flags</text>
+<text xml:space="preserve" text-anchor="start" x="803.9" y="-675.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="849.95" y="-672.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="803.9" y="-647.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="849.95" y="-644.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">name, value</text>
+<polygon fill="none" stroke="#8295a8" points="795.9,-634 795.9,-726 932.39,-726 932.39,-634 795.9,-634" />
+</g>
+
+<g id="panel1-edge4" class="edge">
+<title>company_feature_flags-&gt;feature_flags</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M758.9,-680C768.51,-680 778.01,-680 787.12,-680" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="750.19,-680 741.19,-675.95 745.22,-680 741.66,-680 741.66,-680 741.66,-680 745.22,-680 741.19,-684.05 750.19,-680" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="756.2" cy="-680" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="795.2,-675.5 795.2,-684.5 793.4,-684.5 793.4,-675.5 795.2,-675.5" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="796.1,-680 791.6,-680" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="790.7,-675.5 790.7,-684.5 788.9,-684.5 788.9,-675.5 790.7,-675.5" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="791.6,-680 787.1,-680" />
+</g>
+
+<g id="panel1-node7" class="node">
+<title>sessions</title>
+<polygon fill="white" stroke="none" points="460.44,-216.8 460.44,-337.2 684.42,-337.2 684.42,-216.8 460.44,-216.8" />
+<polygon fill="#243b53" stroke="none" points="461.44,-303 461.44,-336.2 683.42,-336.2 683.42,-303 461.44,-303" />
+<text xml:space="preserve" text-anchor="start" x="468.44" y="-315.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">sessions</text>
+<text xml:space="preserve" text-anchor="start" x="468.44" y="-286.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="497.52" y="-284" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="468.44" y="-258.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="497.52" y="-255.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">user_id</text>
+<text xml:space="preserve" text-anchor="start" x="468.44" y="-230" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="497.52" y="-227.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="460.44,-216.8 460.44,-337.2 684.42,-337.2 684.42,-216.8 460.44,-216.8" />
+</g>
+
+<g id="panel1-edge2" class="edge">
+<title>sessions-&gt;users</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M701.34,-311.17C711.19,-313.81 721.11,-316.46 730.9,-319.07" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="693.24,-309.01 685.59,-302.77 688.44,-307.73 684.99,-306.81 684.99,-306.81 684.99,-306.81 688.44,-307.73 683.5,-310.6 693.24,-309.01" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="699.04" cy="-310.56" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="739.76,-316.78 737.43,-325.48 735.69,-325.01 738.02,-316.32 739.76,-316.78" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="739.46,-321.36 735.12,-320.2" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="735.41,-315.62 733.09,-324.31 731.35,-323.85 733.67,-315.15 735.41,-315.62" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="735.12,-320.2 730.77,-319.04" />
+</g>
+
+<g id="panel1-node8" class="node">
+<title>onboardings</title>
+<polygon fill="white" stroke="none" points="460.44,-365.8 460.44,-486.2 684.42,-486.2 684.42,-365.8 460.44,-365.8" />
+<polygon fill="#243b53" stroke="none" points="461.44,-452 461.44,-485.2 683.42,-485.2 683.42,-452 461.44,-452" />
+<text xml:space="preserve" text-anchor="start" x="468.44" y="-464.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">onboardings</text>
+<text xml:space="preserve" text-anchor="start" x="468.44" y="-435.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="497.52" y="-433" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="468.44" y="-407.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="497.52" y="-404.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="468.44" y="-379" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="497.52" y="-376.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">user_id</text>
+<polygon fill="none" stroke="#8295a8" points="460.44,-365.8 460.44,-486.2 684.42,-486.2 684.42,-365.8 460.44,-365.8" />
+</g>
+
+<g id="panel1-edge3" class="edge">
+<title>onboardings-&gt;users</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M696.57,-392.66C707.95,-389.57 719.47,-386.45 730.82,-383.38" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="686.13,-400.14 683.78,-391.46 685.52,-390.99 687.87,-399.67 686.13,-400.14" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="684.09,-396.03 688.43,-394.86" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="692.58" cy="-393.73" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="737.42,-376.93 739.77,-385.62 738.03,-386.09 735.68,-377.4 737.42,-376.93" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="739.46,-381.04 735.12,-382.22" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="733.08,-378.11 735.43,-386.8 733.69,-387.27 731.34,-378.58 733.08,-378.11" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="735.12,-382.22 730.78,-383.39" />
+</g>
+
+<g id="panel1-node9" class="node">
+<title>communication_templates</title>
+<polygon fill="white" stroke="none" points="462.58,0 462.58,-92 715.39,-92 715.39,0 462.58,0" />
+<polygon fill="#243b53" stroke="none" points="463.58,-57.8 463.58,-91 714.39,-91 714.39,-57.8 463.58,-57.8" />
+<text xml:space="preserve" text-anchor="start" x="470.58" y="-70.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">communication_templates</text>
+<text xml:space="preserve" text-anchor="start" x="470.58" y="-41.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="514.08" y="-38.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="470.58" y="-13.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="514.08" y="-10.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="462.58,0 462.58,-92 715.39,-92 715.39,0 462.58,0" />
+</g>
+
+<g id="panel1-node10" class="node">
+<title>import_processes</title>
+<polygon fill="white" stroke="none" points="832.42,0 832.42,-92 1056.39,-92 1056.39,0 832.42,0" />
+<polygon fill="#243b53" stroke="none" points="833.42,-57.8 833.42,-91 1055.39,-91 1055.39,-57.8 833.42,-57.8" />
+<text xml:space="preserve" text-anchor="start" x="840.42" y="-70.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">import_processes</text>
+<text xml:space="preserve" text-anchor="start" x="840.42" y="-41.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="869.49" y="-38.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="840.42" y="-13.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="869.49" y="-10.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="832.42,0 832.42,-92 1056.39,-92 1056.39,0 832.42,0" />
+</g>
+
+<g id="panel1-node11" class="node">
+<title>job_execution_summaries</title>
+<polygon fill="white" stroke="none" points="96.24,-185.8 96.24,-306.2 343.39,-306.2 343.39,-185.8 96.24,-185.8" />
+<polygon fill="#243b53" stroke="none" points="97.24,-272 97.24,-305.2 342.39,-305.2 342.39,-272 97.24,-272" />
+<text xml:space="preserve" text-anchor="start" x="104.24" y="-284.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">job_execution_summaries</text>
+<text xml:space="preserve" text-anchor="start" x="104.24" y="-255.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="153.4" y="-253" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="104.24" y="-227.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="153.4" y="-224.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="104.24" y="-199" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="153.4" y="-196.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">active_job_id</text>
+<polygon fill="none" stroke="#8295a8" points="96.24,-185.8 96.24,-306.2 343.39,-306.2 343.39,-185.8 96.24,-185.8" />
+</g>
+</g>
+
+</g>
+</g>
+<g id="detail-3" transform="translate(0 3237)">
+<rect x="0" y="0" width="1680" height="1363" rx="0" fill="#fff" stroke="none" stroke-width="1.4"/>
+<rect x="48" y="14" width="1584" height="1341" rx="10" fill="#fff" stroke="#93a4b7" stroke-width="1.6"/>
+<rect x="72" y="34" width="44" height="27" rx="4" fill="#243b53" stroke="none" stroke-width="1.4"/>
+<text x="94" y="53" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="0">03</text>
+<text x="133" y="57" font-size="28" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">Property operations</text>
+<text x="73" y="88" font-size="16" font-weight="400" fill="#4a6379" text-anchor="start" letter-spacing="0">Cleaning, maintenance, inventory and assets</text>
+<text x="1608" y="87" font-size="16" font-weight="400" fill="#4a6379" text-anchor="end" letter-spacing="0">9 schema tables</text>
+<path d="M48 106L1632 106" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<g transform="translate(109.73 123) scale(1.0500) translate(-1.0 -1.0)">
+<g xmlns="http://www.w3.org/2000/svg" id="panel2-graph0" class="graph" transform="scale(1 1) rotate(0) translate(5.44 1151.64)">
+<title>erd</title>
+
+<g id="panel2-node1" class="node">
+<title>cleanings</title>
+<polygon fill="white" stroke="none" points="65.98,-8.2 65.98,-185.4 289.96,-185.4 289.96,-8.2 65.98,-8.2" />
+<polygon fill="#243b53" stroke="none" points="66.98,-151.2 66.98,-184.4 288.96,-184.4 288.96,-151.2 66.98,-151.2" />
+<text xml:space="preserve" text-anchor="start" x="73.98" y="-164" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">cleanings</text>
+<text xml:space="preserve" text-anchor="start" x="73.98" y="-135" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="103.06" y="-132.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="73.98" y="-106.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="103.06" y="-103.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">user_id</text>
+<text xml:space="preserve" text-anchor="start" x="73.98" y="-78.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="103.06" y="-75.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">reservation_id</text>
+<text xml:space="preserve" text-anchor="start" x="73.98" y="-49.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="103.06" y="-47" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">staff_member_id</text>
+<text xml:space="preserve" text-anchor="start" x="73.98" y="-21.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="103.06" y="-18.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="65.98,-8.2 65.98,-185.4 289.96,-185.4 289.96,-8.2 65.98,-8.2" />
+</g>
+
+<g id="panel2-node2" class="node">
+<title>staff_members</title>
+<polygon fill="white" stroke="none" points="489.93,-68.8 489.93,-160.8 713.9,-160.8 713.9,-68.8 489.93,-68.8" />
+<polygon fill="#243b53" stroke="none" points="490.93,-126.6 490.93,-159.8 712.9,-159.8 712.9,-126.6 490.93,-126.6" />
+<text xml:space="preserve" text-anchor="start" x="497.93" y="-139.4" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">staff_members</text>
+<text xml:space="preserve" text-anchor="start" x="497.93" y="-110.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="527" y="-107.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="497.93" y="-82" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="527" y="-79.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="489.93,-68.8 489.93,-160.8 713.9,-160.8 713.9,-68.8 489.93,-68.8" />
+</g>
+
+<g id="panel2-edge6" class="edge">
+<title>cleanings-&gt;staff_members</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M307.95,-102.3C361.71,-104.6 423.89,-107.25 477.09,-109.52" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="299.29,-101.93 290.47,-97.5 294.33,-101.72 290.77,-101.57 290.77,-101.57 290.77,-101.57 294.33,-101.72 290.13,-105.6 299.29,-101.93" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="305.29" cy="-102.19" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="489.35,-105.54 488.97,-114.53 487.17,-114.45 487.56,-105.46 489.35,-105.54" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="490.06,-110.07 485.57,-109.88" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="481.27" cy="-109.7" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel2-node13" class="node">
+<title>reservations</title>
+<polygon fill="white" stroke="none" points="482.15,0 482.15,-63.6 721.68,-63.6 721.68,0 482.15,0" />
+<polygon fill="#edf1f5" stroke="none" points="483.15,-29.4 483.15,-62.6 720.68,-62.6 720.68,-29.4 483.15,-29.4" />
+<text xml:space="preserve" text-anchor="start" x="490.15" y="-42.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#263a50">reservations</text>
+<text xml:space="preserve" text-anchor="start" x="490.15" y="-13.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">REF</text>
+<text xml:space="preserve" text-anchor="start" x="525.51" y="-10.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">Table detailed in another panel</text>
+<polygon fill="none" stroke="#aab8c5" points="482.15,0 482.15,-63.6 721.68,-63.6 721.68,0 482.15,0" />
+</g>
+
+<g id="panel2-edge5" class="edge">
+<title>cleanings-&gt;reservations</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M307.54,-76.99C360.23,-68.88 421.05,-59.51 473.6,-51.41" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="299.19,-78.28 289.68,-75.65 294.28,-79.04 290.76,-79.58 290.76,-79.58 290.76,-79.58 294.28,-79.04 290.91,-83.65 299.19,-78.28" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="305.12" cy="-77.37" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="480.72,-45.76 482.09,-54.66 480.31,-54.93 478.94,-46.04 480.72,-45.76" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="482.3,-50.07 477.85,-50.76" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="476.27,-46.45 477.64,-55.34 475.86,-55.62 474.49,-46.72 476.27,-46.45" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="477.85,-50.76 473.4,-51.44" />
+</g>
+
+<g id="panel2-node14" class="node">
+<title>users</title>
+<polygon fill="white" stroke="none" points="482.15,-200 482.15,-263.6 721.68,-263.6 721.68,-200 482.15,-200" />
+<polygon fill="#edf1f5" stroke="none" points="483.15,-229.4 483.15,-262.6 720.68,-262.6 720.68,-229.4 483.15,-229.4" />
+<text xml:space="preserve" text-anchor="start" x="490.15" y="-242.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#263a50">users</text>
+<text xml:space="preserve" text-anchor="start" x="490.15" y="-213.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">REF</text>
+<text xml:space="preserve" text-anchor="start" x="525.51" y="-210.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">Table detailed in another panel</text>
+<polygon fill="none" stroke="#aab8c5" points="482.15,-200 482.15,-263.6 721.68,-263.6 721.68,-200 482.15,-200" />
+</g>
+
+<g id="panel2-edge4" class="edge">
+<title>cleanings-&gt;users</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M306.98,-140.39C360.7,-158.69 410.94,-175.8 410.94,-175.8 410.94,-175.8 442.97,-185.24 480.73,-196.37" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="298.82,-137.62 291.61,-130.88 294.12,-136.02 290.74,-134.87 290.74,-134.87 290.74,-134.87 294.12,-136.02 289,-138.55 298.82,-137.62" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="304.51" cy="-139.55" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="493.57,-195.47 491.02,-204.1 489.3,-203.59 491.84,-194.96 493.57,-195.47" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="493.16,-200.04 488.84,-198.76" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="484.72" cy="-197.55" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel2-node3" class="node">
+<title>maintenances</title>
+<polygon fill="white" stroke="none" points="464.83,-636.4 464.83,-785.2 739,-785.2 739,-636.4 464.83,-636.4" />
+<polygon fill="#243b53" stroke="none" points="465.83,-751 465.83,-784.2 738,-784.2 738,-751 465.83,-751" />
+<text xml:space="preserve" text-anchor="start" x="472.83" y="-763.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">maintenances</text>
+<text xml:space="preserve" text-anchor="start" x="472.83" y="-734.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="516.27" y="-732" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="472.83" y="-706.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="516.27" y="-703.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="472.83" y="-678" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="516.27" y="-675.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">vendor_id</text>
+<text xml:space="preserve" text-anchor="start" x="472.83" y="-649.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="516.27" y="-646.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">maintainable_type, maintainable_id</text>
+<polygon fill="none" stroke="#8295a8" points="464.83,-636.4 464.83,-785.2 739,-785.2 739,-636.4 464.83,-636.4" />
+</g>
+
+<g id="panel2-node5" class="node">
+<title>vendors</title>
+<polygon fill="white" stroke="none" points="855.66,-539.6 855.66,-660 1079.64,-660 1079.64,-539.6 855.66,-539.6" />
+<polygon fill="#243b53" stroke="none" points="856.66,-625.8 856.66,-659 1078.64,-659 1078.64,-625.8 856.66,-625.8" />
+<text xml:space="preserve" text-anchor="start" x="863.66" y="-638.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">vendors</text>
+<text xml:space="preserve" text-anchor="start" x="863.66" y="-609.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="892.74" y="-606.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="863.66" y="-581.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="892.74" y="-578.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="863.66" y="-552.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="892.74" y="-550" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">address_id</text>
+<polygon fill="none" stroke="#8295a8" points="855.66,-539.6 855.66,-660 1079.64,-660 1079.64,-539.6 855.66,-539.6" />
+</g>
+
+<g id="panel2-edge7" class="edge">
+<title>maintenances-&gt;vendors</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M756.21,-664.02C785.32,-655.14 815.44,-645.95 843.47,-637.39" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="747.93,-666.55 738.14,-665.3 743.18,-668 739.77,-669.04 739.77,-669.04 739.77,-669.04 743.18,-668 740.5,-673.05 747.93,-666.55" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="753.67" cy="-664.79" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="853.59,-629.6 856.22,-638.2 854.5,-638.73 851.87,-630.12 853.59,-629.6" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="855.77,-633.64 851.46,-634.95" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="847.35" cy="-636.21" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel2-node4" class="node">
+<title>tasks</title>
+<polygon fill="white" stroke="none" points="969.6,-956.4 969.6,-1105.2 1207.94,-1105.2 1207.94,-956.4 969.6,-956.4" />
+<polygon fill="#243b53" stroke="none" points="970.6,-1071 970.6,-1104.2 1206.94,-1104.2 1206.94,-1071 970.6,-1071" />
+<text xml:space="preserve" text-anchor="start" x="977.6" y="-1083.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">tasks</text>
+<text xml:space="preserve" text-anchor="start" x="977.6" y="-1054.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="1021.04" y="-1052" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="977.6" y="-1026.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="1021.04" y="-1023.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="977.6" y="-998" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="1021.04" y="-995.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">parent_task_id</text>
+<text xml:space="preserve" text-anchor="start" x="977.6" y="-969.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="1021.04" y="-966.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">taskable_type, taskable_id</text>
+<polygon fill="none" stroke="#8295a8" points="969.6,-956.4 969.6,-1105.2 1207.94,-1105.2 1207.94,-956.4 969.6,-956.4" />
+</g>
+
+<g id="panel2-edge10" class="edge">
+<title>tasks-&gt;tasks</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M1053.51,-1121.14C1060.91,-1129.16 1072.66,-1134.2 1088.77,-1134.2 1107.42,-1134.2 1120.24,-1127.44 1127.21,-1117.1" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="1049.55,-1113.55 1048.98,-1103.7 1047.25,-1109.15 1045.6,-1105.99 1045.6,-1105.99 1045.6,-1105.99 1047.25,-1109.15 1041.8,-1107.45 1049.55,-1113.55" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="1052.33" cy="-1118.87" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="1127.88,-1104.2 1136.14,-1107.77 1135.43,-1109.42 1127.16,-1105.85 1127.88,-1104.2" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="1132.37,-1105.16 1130.58,-1109.29" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="1128.88" cy="-1113.24" rx="3.6" ry="3.6" />
+<text xml:space="preserve" text-anchor="middle" x="1088.77" y="-1137.2" font-family="DejaVu Sans" font-size="10.00" fill="#3d566d">parent_task_id</text>
+</g>
+
+<g id="panel2-node10" class="node">
+<title>addresses</title>
+<polygon fill="white" stroke="none" points="1142.41,-568 1142.41,-631.6 1381.94,-631.6 1381.94,-568 1142.41,-568" />
+<polygon fill="#edf1f5" stroke="none" points="1143.41,-597.4 1143.41,-630.6 1380.94,-630.6 1380.94,-597.4 1143.41,-597.4" />
+<text xml:space="preserve" text-anchor="start" x="1150.41" y="-610.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#263a50">addresses</text>
+<text xml:space="preserve" text-anchor="start" x="1150.41" y="-581.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">REF</text>
+<text xml:space="preserve" text-anchor="start" x="1185.78" y="-578.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">Table detailed in another panel</text>
+<polygon fill="none" stroke="#aab8c5" points="1142.41,-568 1142.41,-631.6 1381.94,-631.6 1381.94,-568 1142.41,-568" />
+</g>
+
+<g id="panel2-edge13" class="edge">
+<title>vendors-&gt;addresses</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M1097.41,-599.8C1109.51,-599.8 1121.77,-599.8 1133.85,-599.8" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="1088.71,-599.8 1079.71,-595.75 1083.74,-599.8 1080.18,-599.8 1080.18,-599.8 1080.18,-599.8 1083.74,-599.8 1079.71,-603.85 1088.71,-599.8" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="1094.72" cy="-599.8" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="1141.72,-595.3 1141.72,-604.3 1139.92,-604.3 1139.92,-595.3 1141.72,-595.3" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="1142.62,-599.8 1138.12,-599.8" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="1137.22,-595.3 1137.22,-604.3 1135.42,-604.3 1135.42,-595.3 1137.22,-595.3" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="1138.12,-599.8 1133.62,-599.8" />
+</g>
+
+<g id="panel2-node6" class="node">
+<title>inventories</title>
+<polygon fill="white" stroke="none" points="489.93,-482.4 489.93,-631.2 713.9,-631.2 713.9,-482.4 489.93,-482.4" />
+<polygon fill="#243b53" stroke="none" points="490.93,-597 490.93,-630.2 712.9,-630.2 712.9,-597 490.93,-597" />
+<text xml:space="preserve" text-anchor="start" x="497.93" y="-609.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">inventories</text>
+<text xml:space="preserve" text-anchor="start" x="497.93" y="-580.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="527" y="-578" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="497.93" y="-552.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="527" y="-549.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="497.93" y="-524" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="527" y="-521.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_id</text>
+<text xml:space="preserve" text-anchor="start" x="497.93" y="-495.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="527" y="-492.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">vendor_id</text>
+<polygon fill="none" stroke="#8295a8" points="489.93,-482.4 489.93,-631.2 713.9,-631.2 713.9,-482.4 489.93,-482.4" />
+</g>
+
+<g id="panel2-edge12" class="edge">
+<title>inventories-&gt;vendors</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M731.58,-572.01C769.18,-576.46 810.11,-581.29 847.11,-585.67" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="722.93,-570.99 714.47,-565.91 718,-570.4 714.46,-569.99 714.46,-569.99 714.46,-569.99 718,-570.4 713.52,-573.95 722.93,-570.99" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="728.9" cy="-571.69" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="855.57,-582.14 854.51,-591.07 852.73,-590.86 853.78,-581.93 855.57,-582.14" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="855.94,-586.71 851.47,-586.18" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="851.1,-581.61 850.05,-590.55 848.26,-590.34 849.31,-581.4 851.1,-581.61" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="851.47,-586.18 847,-585.65" />
+</g>
+
+<g id="panel2-node12" class="node">
+<title>properties</title>
+<polygon fill="white" stroke="none" points="847.89,-438 847.89,-501.6 1087.41,-501.6 1087.41,-438 847.89,-438" />
+<polygon fill="#edf1f5" stroke="none" points="848.89,-467.4 848.89,-500.6 1086.41,-500.6 1086.41,-467.4 848.89,-467.4" />
+<text xml:space="preserve" text-anchor="start" x="855.89" y="-480.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#263a50">properties</text>
+<text xml:space="preserve" text-anchor="start" x="855.89" y="-451.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">REF</text>
+<text xml:space="preserve" text-anchor="start" x="891.25" y="-448.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">Table detailed in another panel</text>
+<polygon fill="none" stroke="#aab8c5" points="847.89,-438 847.89,-501.6 1087.41,-501.6 1087.41,-438 847.89,-438" />
+</g>
+
+<g id="panel2-edge11" class="edge">
+<title>inventories-&gt;properties</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M731.03,-526.16C766.27,-517.73 804.46,-508.59 839.63,-500.18" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="722.74,-528.14 713.04,-526.29 717.91,-529.3 714.44,-530.12 714.44,-530.12 714.44,-530.12 717.91,-529.3 714.93,-534.17 722.74,-528.14" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="728.58" cy="-526.74" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="846.11,-494.01 848.2,-502.76 846.45,-503.18 844.36,-494.42 846.11,-494.01" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="848.03,-498.17 843.65,-499.22" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="841.73,-495.05 843.82,-503.81 842.07,-504.22 839.98,-495.47 841.73,-495.05" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="843.65,-499.22 839.28,-500.27" />
+</g>
+
+<g id="panel2-node7" class="node">
+<title>inventory_movements</title>
+<polygon fill="white" stroke="none" points="58.8,-534.4 58.8,-683.2 297.14,-683.2 297.14,-534.4 58.8,-534.4" />
+<polygon fill="#243b53" stroke="none" points="59.8,-649 59.8,-682.2 296.14,-682.2 296.14,-649 59.8,-649" />
+<text xml:space="preserve" text-anchor="start" x="66.8" y="-661.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">inventory_movements</text>
+<text xml:space="preserve" text-anchor="start" x="66.8" y="-632.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="110.24" y="-630" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="66.8" y="-604.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="110.24" y="-601.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="66.8" y="-576" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="110.24" y="-573.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">inventory_item_id</text>
+<text xml:space="preserve" text-anchor="start" x="66.8" y="-547.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="110.24" y="-544.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">source_type, source_id</text>
+<polygon fill="none" stroke="#8295a8" points="58.8,-534.4 58.8,-683.2 297.14,-683.2 297.14,-534.4 58.8,-534.4" />
+</g>
+
+<g id="panel2-edge9" class="edge">
+<title>inventory_movements-&gt;inventories</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M315.12,-592.02C368.6,-585.43 429.44,-577.93 481.21,-571.55" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="306.46,-593.09 297.03,-590.17 301.53,-593.7 297.99,-594.13 297.99,-594.13 297.99,-594.13 301.53,-593.7 298.03,-598.21 306.46,-593.09" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="312.42" cy="-592.35" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="488.65,-566.1 489.75,-575.03 487.97,-575.25 486.87,-566.32 488.65,-566.1" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="490.1,-570.46 485.63,-571.01" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="484.19,-566.65 485.29,-575.58 483.5,-575.8 482.4,-566.87 484.19,-566.65" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="485.63,-571.01 481.16,-571.56" />
+</g>
+
+<g id="panel2-node8" class="node">
+<title>assets</title>
+<polygon fill="white" stroke="none" points="410.94,-285.4 410.94,-434.2 792.89,-434.2 792.89,-285.4 410.94,-285.4" />
+<polygon fill="#243b53" stroke="none" points="411.94,-400 411.94,-433.2 791.89,-433.2 791.89,-400 411.94,-400" />
+<text xml:space="preserve" text-anchor="start" x="418.94" y="-412.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">assets</text>
+<text xml:space="preserve" text-anchor="start" x="418.94" y="-383.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="448.02" y="-381" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="418.94" y="-355.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="448.02" y="-352.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id, listing_id  →  listings(company_id, id)</text>
+<text xml:space="preserve" text-anchor="start" x="418.94" y="-327" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="448.02" y="-324.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id, property_id  →  properties(company_id, id)</text>
+<text xml:space="preserve" text-anchor="start" x="418.94" y="-298.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="448.02" y="-295.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="410.94,-285.4 410.94,-434.2 792.89,-434.2 792.89,-285.4 410.94,-285.4" />
+</g>
+
+<g id="panel2-node11" class="node">
+<title>listings</title>
+<polygon fill="white" stroke="none" points="847.89,-328 847.89,-391.6 1087.41,-391.6 1087.41,-328 847.89,-328" />
+<polygon fill="#edf1f5" stroke="none" points="848.89,-357.4 848.89,-390.6 1086.41,-390.6 1086.41,-357.4 848.89,-357.4" />
+<text xml:space="preserve" text-anchor="start" x="855.89" y="-370.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#263a50">listings</text>
+<text xml:space="preserve" text-anchor="start" x="855.89" y="-341.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">REF</text>
+<text xml:space="preserve" text-anchor="start" x="891.25" y="-338.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">Table detailed in another panel</text>
+<polygon fill="none" stroke="#aab8c5" points="847.89,-328 847.89,-391.6 1087.41,-391.6 1087.41,-328 847.89,-328" />
+</g>
+
+<g id="panel2-edge2" class="edge">
+<title>assets-&gt;listings</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M810.75,-359.8C818.96,-359.8 827.1,-359.8 835.09,-359.8" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="802.24,-359.8 793.24,-355.75 797.27,-359.8 793.71,-359.8 793.71,-359.8 793.71,-359.8 797.27,-359.8 793.24,-363.85 802.24,-359.8" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="808.25" cy="-359.8" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="847.06,-355.3 847.06,-364.3 845.26,-364.3 845.26,-355.3 847.06,-355.3" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="847.96,-359.8 843.46,-359.8" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="839.16" cy="-359.8" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel2-edge3" class="edge">
+<title>assets-&gt;properties</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M809.99,-422.42C823.53,-426.52 836.89,-430.56 849.75,-434.45" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="801.84,-419.96 794.39,-413.48 797.08,-418.52 793.67,-417.49 793.67,-417.49 793.67,-417.49 797.08,-418.52 792.05,-421.23 801.84,-419.96" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="807.58" cy="-421.7" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="862.35,-433.56 859.75,-442.17 858.02,-441.65 860.63,-433.04 862.35,-433.56" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="861.91,-438.12 857.6,-436.82" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="853.49" cy="-435.58" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel2-node9" class="node">
+<title>asset_events</title>
+<polygon fill="white" stroke="none" points="0,-214.4 0,-505.2 355.94,-505.2 355.94,-214.4 0,-214.4" />
+<polygon fill="#243b53" stroke="none" points="1,-471 1,-504.2 354.94,-504.2 354.94,-471 1,-471" />
+<text xml:space="preserve" text-anchor="start" x="8" y="-483.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">asset_events</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-454.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="54.06" y="-452" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-426.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="54.06" y="-423.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id, asset_id  →  assets(company_id, id)</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-398" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="54.06" y="-395.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">user_id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-369.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="54.06" y="-366.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-341.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="54.06" y="-338.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">asset_id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-312.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="54.06" y="-310" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">previous_property_id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-284.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="54.06" y="-281.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">previous_listing_id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-256" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="54.06" y="-253.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">destination_property_id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-227.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="54.06" y="-224.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">destination_listing_id</text>
+<polygon fill="none" stroke="#8295a8" points="0,-214.4 0,-505.2 355.94,-505.2 355.94,-214.4 0,-214.4" />
+</g>
+
+<g id="panel2-edge1" class="edge">
+<title>asset_events-&gt;assets</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M373.86,-359.8C383.35,-359.8 392.88,-359.8 402.38,-359.8" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="365.24,-359.8 356.24,-355.75 360.27,-359.8 356.71,-359.8 356.71,-359.8 356.71,-359.8 360.27,-359.8 356.24,-363.85 365.24,-359.8" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="371.25" cy="-359.8" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="410.2,-355.3 410.2,-364.3 408.4,-364.3 408.4,-355.3 410.2,-355.3" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="411.1,-359.8 406.6,-359.8" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="405.7,-355.3 405.7,-364.3 403.9,-364.3 403.9,-355.3 405.7,-355.3" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="406.6,-359.8 402.1,-359.8" />
+</g>
+
+<g id="panel2-edge14" class="edge">
+<title>asset_events-&gt;assets</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M373.86,-359.8C383.35,-359.8 392.88,-359.8 402.38,-359.8" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="365.24,-359.8 356.24,-355.75 360.27,-359.8 356.71,-359.8 356.71,-359.8 356.71,-359.8 360.27,-359.8 356.24,-363.85 365.24,-359.8" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="371.25" cy="-359.8" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="410.2,-355.3 410.2,-364.3 408.4,-364.3 408.4,-355.3 410.2,-355.3" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="411.1,-359.8 406.6,-359.8" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="405.7,-355.3 405.7,-364.3 403.9,-364.3 403.9,-355.3 405.7,-355.3" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="406.6,-359.8 402.1,-359.8" />
+</g>
+
+<g id="panel2-edge8" class="edge">
+<title>asset_events-&gt;users</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M372.62,-285.5C395.51,-276.72 410.94,-270.8 410.94,-270.8 410.94,-270.8 436.79,-265.49 469.42,-258.79" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="364.51,-288.61 354.66,-288.06 359.87,-290.39 356.55,-291.67 356.55,-291.67 356.55,-291.67 359.87,-290.39 357.56,-295.62 364.51,-288.61" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="370.12" cy="-286.46" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="480.43,-251.94 482.24,-260.76 480.48,-261.12 478.67,-252.3 480.43,-251.94" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="482.22,-256.17 477.81,-257.07" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="473.6" cy="-257.94" rx="3.6" ry="3.6" />
+</g>
+</g>
+
+</g>
+</g>
+<g id="detail-4" transform="translate(0 4615)">
+<rect x="0" y="0" width="1680" height="1058" rx="0" fill="#fff" stroke="none" stroke-width="1.4"/>
+<rect x="48" y="14" width="1584" height="1036" rx="10" fill="#fff" stroke="#93a4b7" stroke-width="1.6"/>
+<rect x="72" y="34" width="44" height="27" rx="4" fill="#243b53" stroke="none" stroke-width="1.4"/>
+<text x="94" y="53" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="0">04</text>
+<text x="133" y="57" font-size="28" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">Finance and payouts</text>
+<text x="73" y="88" font-size="16" font-weight="400" fill="#4a6379" text-anchor="start" letter-spacing="0">Expenses, cost centers, transactions and operational payouts</text>
+<text x="1608" y="87" font-size="16" font-weight="400" fill="#4a6379" text-anchor="end" letter-spacing="0">5 schema tables</text>
+<path d="M48 106L1632 106" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<g transform="translate(353.32 123) scale(1.0500) translate(-1.0 -1.0)">
+<g xmlns="http://www.w3.org/2000/svg" id="panel3-graph0" class="graph" transform="scale(1 1) rotate(0) translate(5.44 860.84)">
+<title>erd</title>
+
+<g id="panel3-node1" class="node">
+<title>expenses</title>
+<polygon fill="white" stroke="none" points="391.61,-92.4 391.61,-241.2 615.59,-241.2 615.59,-92.4 391.61,-92.4" />
+<polygon fill="#243b53" stroke="none" points="392.61,-207 392.61,-240.2 614.59,-240.2 614.59,-207 392.61,-207" />
+<text xml:space="preserve" text-anchor="start" x="399.61" y="-219.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">expenses</text>
+<text xml:space="preserve" text-anchor="start" x="399.61" y="-190.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="428.69" y="-188" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="399.61" y="-162.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="428.69" y="-159.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_id</text>
+<text xml:space="preserve" text-anchor="start" x="399.61" y="-134" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="428.69" y="-131.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="399.61" y="-105.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="428.69" y="-102.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">vendor_id</text>
+<polygon fill="none" stroke="#8295a8" points="391.61,-92.4 391.61,-241.2 615.59,-241.2 615.59,-92.4 391.61,-92.4" />
+</g>
+
+<g id="panel3-node7" class="node">
+<title>properties</title>
+<polygon fill="white" stroke="none" points="678.36,-253 678.36,-316.6 917.88,-316.6 917.88,-253 678.36,-253" />
+<polygon fill="#edf1f5" stroke="none" points="679.36,-282.4 679.36,-315.6 916.88,-315.6 916.88,-282.4 679.36,-282.4" />
+<text xml:space="preserve" text-anchor="start" x="686.36" y="-295.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#263a50">properties</text>
+<text xml:space="preserve" text-anchor="start" x="686.36" y="-266.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">REF</text>
+<text xml:space="preserve" text-anchor="start" x="721.72" y="-263.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">Table detailed in another panel</text>
+<polygon fill="none" stroke="#aab8c5" points="678.36,-253 678.36,-316.6 917.88,-316.6 917.88,-253 678.36,-253" />
+</g>
+
+<g id="panel3-edge4" class="edge">
+<title>expenses-&gt;properties</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M631.93,-218.16C657.07,-228.3 682.97,-238.75 706.58,-248.28" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="623.97,-214.95 617.14,-207.83 619.36,-213.09 616.06,-211.76 616.06,-211.76 616.06,-211.76 619.36,-213.09 614.11,-215.34 623.97,-214.95" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="629.54" cy="-217.2" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="719.56,-248.66 716.19,-257.01 714.52,-256.33 717.89,-247.99 719.56,-248.66" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="718.71,-253.17 714.54,-251.49" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="710.55" cy="-249.88" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel3-node8" class="node">
+<title>vendors</title>
+<polygon fill="white" stroke="none" points="678.36,-135 678.36,-198.6 917.88,-198.6 917.88,-135 678.36,-135" />
+<polygon fill="#edf1f5" stroke="none" points="679.36,-164.4 679.36,-197.6 916.88,-197.6 916.88,-164.4 679.36,-164.4" />
+<text xml:space="preserve" text-anchor="start" x="686.36" y="-177.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#263a50">vendors</text>
+<text xml:space="preserve" text-anchor="start" x="686.36" y="-148.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">REF</text>
+<text xml:space="preserve" text-anchor="start" x="721.72" y="-145.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">Table detailed in another panel</text>
+<polygon fill="none" stroke="#aab8c5" points="678.36,-135 678.36,-198.6 917.88,-198.6 917.88,-135 678.36,-135" />
+</g>
+
+<g id="panel3-edge7" class="edge">
+<title>expenses-&gt;vendors</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M633.36,-166.8C644.05,-166.8 654.86,-166.8 665.57,-166.8" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="624.66,-166.8 615.66,-162.75 619.69,-166.8 616.13,-166.8 616.13,-166.8 616.13,-166.8 619.69,-166.8 615.66,-170.85 624.66,-166.8" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="630.66" cy="-166.8" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="677.66,-162.3 677.66,-171.3 675.86,-171.3 675.86,-162.3 677.66,-162.3" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="678.56,-166.8 674.06,-166.8" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="669.76" cy="-166.8" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel3-node2" class="node">
+<title>expense_items</title>
+<polygon fill="white" stroke="none" points="104.86,-78.2 104.86,-255.4 328.84,-255.4 328.84,-78.2 104.86,-78.2" />
+<polygon fill="#243b53" stroke="none" points="105.86,-221.2 105.86,-254.4 327.84,-254.4 327.84,-221.2 105.86,-221.2" />
+<text xml:space="preserve" text-anchor="start" x="112.86" y="-234" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">expense_items</text>
+<text xml:space="preserve" text-anchor="start" x="112.86" y="-205" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="141.94" y="-202.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="112.86" y="-176.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="141.94" y="-173.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="112.86" y="-148.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="141.94" y="-145.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">inventory_item_id</text>
+<text xml:space="preserve" text-anchor="start" x="112.86" y="-119.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="141.94" y="-117" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">expense_id</text>
+<text xml:space="preserve" text-anchor="start" x="112.86" y="-91.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="141.94" y="-88.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_id</text>
+<polygon fill="none" stroke="#8295a8" points="104.86,-78.2 104.86,-255.4 328.84,-255.4 328.84,-78.2 104.86,-78.2" />
+</g>
+
+<g id="panel3-edge3" class="edge">
+<title>expense_items-&gt;expenses</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M346.96,-166.8C359.06,-166.8 371.29,-166.8 383.3,-166.8" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="338.22,-166.8 329.22,-162.75 333.25,-166.8 329.69,-166.8 329.69,-166.8 329.69,-166.8 333.25,-166.8 329.22,-170.85 338.22,-166.8" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="344.23" cy="-166.8" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="391.09,-162.3 391.09,-171.3 389.29,-171.3 389.29,-162.3 391.09,-162.3" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="391.99,-166.8 387.49,-166.8" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="386.59,-162.3 386.59,-171.3 384.79,-171.3 384.79,-162.3 386.59,-162.3" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="387.49,-166.8 382.99,-166.8" />
+</g>
+
+<g id="panel3-node6" class="node">
+<title>inventories</title>
+<polygon fill="white" stroke="none" points="383.84,0 383.84,-63.6 623.36,-63.6 623.36,0 383.84,0" />
+<polygon fill="#edf1f5" stroke="none" points="384.84,-29.4 384.84,-62.6 622.36,-62.6 622.36,-29.4 384.84,-29.4" />
+<text xml:space="preserve" text-anchor="start" x="391.84" y="-42.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#263a50">inventories</text>
+<text xml:space="preserve" text-anchor="start" x="391.84" y="-13.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">REF</text>
+<text xml:space="preserve" text-anchor="start" x="427.2" y="-10.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">Table detailed in another panel</text>
+<polygon fill="none" stroke="#aab8c5" points="383.84,0 383.84,-63.6 623.36,-63.6 623.36,0 383.84,0" />
+</g>
+
+<g id="panel3-edge1" class="edge">
+<title>expense_items-&gt;inventories</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M344.32,-98.99C367.13,-86.76 383.84,-77.8 383.84,-77.8 383.84,-77.8 394.22,-73.78 408.85,-68.11" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="336.91,-102.96 327.06,-103.65 332.53,-105.31 329.39,-106.99 329.39,-106.99 329.39,-106.99 332.53,-105.31 330.89,-110.78 336.91,-102.96" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="342.2" cy="-100.12" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="418.3,-59.63 421.55,-68.02 419.87,-68.67 416.62,-60.28 418.3,-59.63" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="420.76,-63.5 416.57,-65.12" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="412.56" cy="-66.68" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel3-edge5" class="edge">
+<title>expense_items-&gt;properties</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M344.32,-234.61C367.13,-246.84 383.84,-255.8 383.84,-255.8 383.84,-255.8 544.39,-267.07 665.36,-275.55" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="336.91,-230.64 330.89,-222.82 332.53,-228.29 329.39,-226.61 329.39,-226.61 329.39,-226.61 332.53,-228.29 327.06,-229.95 336.91,-230.64" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="342.2" cy="-233.48" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="677.83,-271.92 677.2,-280.9 675.41,-280.77 676.04,-271.79 677.83,-271.92" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="678.41,-276.47 673.93,-276.16" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="669.64" cy="-275.85" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel3-node3" class="node">
+<title>cost_centers</title>
+<polygon fill="white" stroke="none" points="391.61,-328.6 391.61,-449 615.59,-449 615.59,-328.6 391.61,-328.6" />
+<polygon fill="#243b53" stroke="none" points="392.61,-414.8 392.61,-448 614.59,-448 614.59,-414.8 392.61,-414.8" />
+<text xml:space="preserve" text-anchor="start" x="399.61" y="-427.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">cost_centers</text>
+<text xml:space="preserve" text-anchor="start" x="399.61" y="-398.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="428.69" y="-395.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="399.61" y="-370.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="428.69" y="-367.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_id</text>
+<text xml:space="preserve" text-anchor="start" x="399.61" y="-341.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="428.69" y="-339" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="391.61,-328.6 391.61,-449 615.59,-449 615.59,-328.6 391.61,-328.6" />
+</g>
+
+<g id="panel3-edge2" class="edge">
+<title>cost_centers-&gt;properties</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M627.48,-345.11C650.21,-337.03 673.71,-328.68 695.71,-320.85" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="617.54,-353.42 614.53,-344.94 616.23,-344.34 619.24,-352.82 617.54,-353.42" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="615.19,-349.48 619.43,-347.97" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="623.48" cy="-346.53" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="705.41,-312.63 708.43,-321.11 706.73,-321.71 703.72,-313.23 705.41,-312.63" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="707.77,-316.57 703.53,-318.07" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="699.48" cy="-319.52" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel3-node4" class="node">
+<title>transactions</title>
+<polygon fill="white" stroke="none" points="562.49,-637.2 562.49,-814.4 868.88,-814.4 868.88,-637.2 562.49,-637.2" />
+<polygon fill="#243b53" stroke="none" points="563.49,-780.2 563.49,-813.4 867.88,-813.4 867.88,-780.2 563.49,-780.2" />
+<text xml:space="preserve" text-anchor="start" x="570.49" y="-793" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">transactions</text>
+<text xml:space="preserve" text-anchor="start" x="570.49" y="-764" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="616.55" y="-761.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="570.49" y="-735.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="616.55" y="-732.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="570.49" y="-707.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="616.55" y="-704.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">reverse_from_id</text>
+<text xml:space="preserve" text-anchor="start" x="570.49" y="-678.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="616.55" y="-676" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">transactionable_type, transactionable_id</text>
+<text xml:space="preserve" text-anchor="start" x="570.49" y="-650.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="616.55" y="-647.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">cost_center_id</text>
+<polygon fill="none" stroke="#8295a8" points="562.49,-637.2 562.49,-814.4 868.88,-814.4 868.88,-637.2 562.49,-637.2" />
+</g>
+
+<g id="panel3-edge6" class="edge">
+<title>transactions-&gt;transactions</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M671.06,-829.19C680.61,-837.95 695.49,-843.4 715.69,-843.4 738.71,-843.4 754.81,-836.32 764,-825.35" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="666.22,-822.09 664.5,-812.37 663.43,-817.99 661.42,-815.04 661.42,-815.04 661.42,-815.04 663.43,-817.99 657.81,-816.93 666.22,-822.09" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="669.61" cy="-827.05" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="766.15,-812.77 773.91,-817.32 773,-818.87 765.24,-814.32 766.15,-812.77" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="770.49,-814.27 768.21,-818.15" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="766.04" cy="-821.86" rx="3.6" ry="3.6" />
+<text xml:space="preserve" text-anchor="middle" x="715.69" y="-846.4" font-family="DejaVu Sans" font-size="10.00" fill="#3d566d">reverse_from_id</text>
+</g>
+
+<g id="panel3-node5" class="node">
+<title>operation_payouts</title>
+<polygon fill="white" stroke="none" points="0,-636.6 0,-757 378.88,-757 378.88,-636.6 0,-636.6" />
+<polygon fill="#243b53" stroke="none" points="1,-722.8 1,-756 377.88,-756 377.88,-722.8 1,-722.8" />
+<text xml:space="preserve" text-anchor="start" x="8" y="-735.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">operation_payouts</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-706.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="51.44" y="-703.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-678.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="51.44" y="-675.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-649.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="51.44" y="-647" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">operation_payoutable_type, operation_payoutable_id</text>
+<polygon fill="none" stroke="#8295a8" points="0,-636.6 0,-757 378.88,-757 378.88,-636.6 0,-636.6" />
+</g>
+</g>
+
+</g>
+</g>
+<g id="detail-5" transform="translate(0 5688)">
+<rect x="0" y="0" width="1680" height="1201" rx="0" fill="#fff" stroke="none" stroke-width="1.4"/>
+<rect x="48" y="14" width="1584" height="1179" rx="10" fill="#fff" stroke="#93a4b7" stroke-width="1.6"/>
+<rect x="72" y="34" width="44" height="27" rx="4" fill="#243b53" stroke="none" stroke-width="1.4"/>
+<text x="94" y="53" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="0">05</text>
+<text x="133" y="57" font-size="28" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">Utilities</text>
+<text x="73" y="88" font-size="16" font-weight="400" fill="#4a6379" text-anchor="start" letter-spacing="0">Property utility accounts, provider records and tracker runs</text>
+<text x="1608" y="87" font-size="16" font-weight="400" fill="#4a6379" text-anchor="end" letter-spacing="0">8 schema tables</text>
+<path d="M48 106L1632 106" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<g transform="translate(387.45 123) scale(1.0500) translate(-1.0 -1.0)">
+<g xmlns="http://www.w3.org/2000/svg" id="panel4-graph0" class="graph" transform="scale(1 1) rotate(0) translate(5.44 996.84)">
+<title>erd</title>
+
+<g id="panel4-node1" class="node">
+<title>property_utilities</title>
+<polygon fill="white" stroke="none" points="332.23,-283.8 332.23,-432.6 556.2,-432.6 556.2,-283.8 332.23,-283.8" />
+<polygon fill="#243b53" stroke="none" points="333.23,-398.4 333.23,-431.6 555.2,-431.6 555.2,-398.4 333.23,-398.4" />
+<text xml:space="preserve" text-anchor="start" x="340.23" y="-411.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">property_utilities</text>
+<text xml:space="preserve" text-anchor="start" x="340.23" y="-382.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="369.3" y="-379.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="340.23" y="-353.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="369.3" y="-351" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">utility_tracker_id</text>
+<text xml:space="preserve" text-anchor="start" x="340.23" y="-325.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="369.3" y="-322.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="340.23" y="-297" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="369.3" y="-294.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_id</text>
+<polygon fill="none" stroke="#8295a8" points="332.23,-283.8 332.23,-432.6 556.2,-432.6 556.2,-283.8 332.23,-283.8" />
+</g>
+
+<g id="panel4-node2" class="node">
+<title>utility_trackers</title>
+<polygon fill="white" stroke="none" points="611.2,-359 611.2,-479.4 852.16,-479.4 852.16,-359 611.2,-359" />
+<polygon fill="#243b53" stroke="none" points="612.2,-445.2 612.2,-478.4 851.16,-478.4 851.16,-445.2 612.2,-445.2" />
+<text xml:space="preserve" text-anchor="start" x="619.2" y="-458" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">utility_trackers</text>
+<text xml:space="preserve" text-anchor="start" x="619.2" y="-429" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="665.26" y="-426.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="619.2" y="-400.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="665.26" y="-397.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="619.2" y="-372.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="665.26" y="-369.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">tracker_id</text>
+<polygon fill="none" stroke="#8295a8" points="611.2,-359 611.2,-479.4 852.16,-479.4 852.16,-359 611.2,-359" />
+</g>
+
+<g id="panel4-edge2" class="edge">
+<title>property_utilities-&gt;utility_trackers</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M573.64,-385.64C582,-387.43 590.43,-389.23 598.8,-391.02" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="565.25,-383.85 557.3,-378.01 560.39,-382.81 556.91,-382.07 556.91,-382.07 556.91,-382.07 560.39,-382.81 555.6,-385.93 565.25,-383.85" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="571.12" cy="-385.11" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="611.52,-389.13 609.63,-397.94 607.87,-397.56 609.76,-388.76 611.52,-389.13" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="611.46,-393.72 607.05,-392.78" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="602.85" cy="-391.88" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel4-node9" class="node">
+<title>properties</title>
+<polygon fill="white" stroke="none" points="611.92,-266.4 611.92,-330 851.44,-330 851.44,-266.4 611.92,-266.4" />
+<polygon fill="#edf1f5" stroke="none" points="612.92,-295.8 612.92,-329 850.44,-329 850.44,-295.8 612.92,-295.8" />
+<text xml:space="preserve" text-anchor="start" x="619.92" y="-308.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#263a50">properties</text>
+<text xml:space="preserve" text-anchor="start" x="619.92" y="-279.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">REF</text>
+<text xml:space="preserve" text-anchor="start" x="655.28" y="-276.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">Table detailed in another panel</text>
+<polygon fill="none" stroke="#aab8c5" points="611.92,-266.4 611.92,-330 851.44,-330 851.44,-266.4 611.92,-266.4" />
+</g>
+
+<g id="panel4-edge7" class="edge">
+<title>property_utilities-&gt;properties</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M573.8,-331.17C583.62,-329.11 593.53,-327.03 603.34,-324.97" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="565.26,-332.97 555.62,-330.86 560.4,-333.99 556.91,-334.72 556.91,-334.72 556.91,-334.72 560.4,-333.99 557.28,-338.78 565.26,-332.97" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="571.13" cy="-331.73" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="610.12,-318.94 611.98,-327.75 610.21,-328.12 608.36,-319.31 610.12,-318.94" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="611.93,-323.16 607.53,-324.08" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="605.72,-319.87 607.57,-328.67 605.81,-329.04 603.96,-320.24 605.72,-319.87" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="607.53,-324.08 603.12,-325.01" />
+</g>
+
+<g id="panel4-node3" class="node">
+<title>tracker_runs</title>
+<polygon fill="white" stroke="none" points="613.82,-871 613.82,-991.4 852.16,-991.4 852.16,-871 613.82,-871" />
+<polygon fill="#243b53" stroke="none" points="614.82,-957.2 614.82,-990.4 851.16,-990.4 851.16,-957.2 614.82,-957.2" />
+<text xml:space="preserve" text-anchor="start" x="621.82" y="-970" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">tracker_runs</text>
+<text xml:space="preserve" text-anchor="start" x="621.82" y="-941" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="665.26" y="-938.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="621.82" y="-912.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="665.26" y="-909.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="621.82" y="-884.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="665.26" y="-881.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">tracker_type, tracker_id</text>
+<polygon fill="none" stroke="#8295a8" points="613.82,-871 613.82,-991.4 852.16,-991.4 852.16,-871 613.82,-871" />
+</g>
+
+<g id="panel4-node4" class="node">
+<title>enacal_water_records</title>
+<polygon fill="white" stroke="none" points="26.62,0 26.62,-120.4 250.6,-120.4 250.6,0 26.62,0" />
+<polygon fill="#243b53" stroke="none" points="27.62,-86.2 27.62,-119.4 249.6,-119.4 249.6,-86.2 27.62,-86.2" />
+<text xml:space="preserve" text-anchor="start" x="34.62" y="-99" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">enacal_water_records</text>
+<text xml:space="preserve" text-anchor="start" x="34.62" y="-70" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-67.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="34.62" y="-41.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-38.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_utility_id</text>
+<text xml:space="preserve" text-anchor="start" x="34.62" y="-13.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-10.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="26.62,0 26.62,-120.4 250.6,-120.4 250.6,0 26.62,0" />
+</g>
+
+<g id="panel4-edge1" class="edge">
+<title>enacal_water_records-&gt;property_utilities</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M266.35,-128.35C273.13,-132 277.23,-134.2 277.23,-134.2 277.23,-134.2 333.42,-210.04 380.42,-273.46" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="258.71,-124.24 252.7,-116.41 254.33,-121.89 251.19,-120.2 251.19,-120.2 251.19,-120.2 254.33,-121.89 248.86,-123.55 258.71,-124.24" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="264" cy="-127.09" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="391.25,-280.52 384.02,-285.88 382.95,-284.43 390.18,-279.07 391.25,-280.52" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="388.17,-283.92 385.49,-280.31" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="382.93" cy="-276.85" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel4-node5" class="node">
+<title>union_fenosa_client_infos</title>
+<polygon fill="white" stroke="none" points="15.68,-149 15.68,-269.4 261.54,-269.4 261.54,-149 15.68,-149" />
+<polygon fill="#243b53" stroke="none" points="16.68,-235.2 16.68,-268.4 260.54,-268.4 260.54,-235.2 16.68,-235.2" />
+<text xml:space="preserve" text-anchor="start" x="23.68" y="-248" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">union_fenosa_client_infos</text>
+<text xml:space="preserve" text-anchor="start" x="23.68" y="-219" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-216.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="23.68" y="-190.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-187.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_utility_id</text>
+<text xml:space="preserve" text-anchor="start" x="23.68" y="-162.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-159.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="15.68,-149 15.68,-269.4 261.54,-269.4 261.54,-149 15.68,-149" />
+</g>
+
+<g id="panel4-edge3" class="edge">
+<title>union_fenosa_client_infos-&gt;property_utilities</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M277.68,-276.96C293.25,-284.6 309.01,-292.34 324.31,-299.84" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="269.85,-273.12 263.56,-265.52 265.39,-270.93 262.19,-269.36 262.19,-269.36 262.19,-269.36 265.39,-270.93 259.99,-272.79 269.85,-273.12" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="275.24" cy="-275.76" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="333.43,-299.31 329.47,-307.39 327.85,-306.6 331.82,-298.52 333.43,-299.31" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="332.26,-303.75 328.22,-301.76" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="329.39,-297.33 325.43,-305.41 323.81,-304.61 327.78,-296.53 329.39,-297.33" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="328.22,-301.76 324.18,-299.78" />
+</g>
+
+<g id="panel4-node6" class="node">
+<title>union_fenosa_invoices</title>
+<polygon fill="white" stroke="none" points="26.62,-298 26.62,-418.4 250.6,-418.4 250.6,-298 26.62,-298" />
+<polygon fill="#243b53" stroke="none" points="27.62,-384.2 27.62,-417.4 249.6,-417.4 249.6,-384.2 27.62,-384.2" />
+<text xml:space="preserve" text-anchor="start" x="34.62" y="-397" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">union_fenosa_invoices</text>
+<text xml:space="preserve" text-anchor="start" x="34.62" y="-368" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-365.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="34.62" y="-339.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-336.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="34.62" y="-311.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-308.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_utility_id</text>
+<polygon fill="none" stroke="#8295a8" points="26.62,-298 26.62,-418.4 250.6,-418.4 250.6,-298 26.62,-298" />
+</g>
+
+<g id="panel4-edge5" class="edge">
+<title>union_fenosa_invoices-&gt;property_utilities</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M268.56,-358.2C286.8,-358.2 305.5,-358.2 323.56,-358.2" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="259.98,-358.2 250.98,-354.15 255.01,-358.2 251.45,-358.2 251.45,-358.2 251.45,-358.2 255.01,-358.2 250.98,-362.25 259.98,-358.2" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="265.98" cy="-358.2" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="331.47,-353.7 331.47,-362.7 329.67,-362.7 329.67,-353.7 331.47,-353.7" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="332.37,-358.2 327.87,-358.2" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="326.97,-353.7 326.97,-362.7 325.17,-362.7 325.17,-353.7 326.97,-353.7" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="327.87,-358.2 323.37,-358.2" />
+</g>
+
+<g id="panel4-node7" class="node">
+<title>union_fenosa_measurements</title>
+<polygon fill="white" stroke="none" points="0,-447 0,-567.4 277.23,-567.4 277.23,-447 0,-447" />
+<polygon fill="#243b53" stroke="none" points="1,-533.2 1,-566.4 276.23,-566.4 276.23,-533.2 1,-533.2" />
+<text xml:space="preserve" text-anchor="start" x="8" y="-546" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">union_fenosa_measurements</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-517" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-514.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-488.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-485.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-460.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-457.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_utility_id</text>
+<polygon fill="none" stroke="#8295a8" points="0,-447 0,-567.4 277.23,-567.4 277.23,-447 0,-447" />
+</g>
+
+<g id="panel4-edge6" class="edge">
+<title>union_fenosa_measurements-&gt;property_utilities</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M278.39,-439.09C293.8,-431.53 309.4,-423.87 324.53,-416.45" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="270.72,-442.85 260.86,-443.18 266.26,-445.04 263.07,-446.61 263.07,-446.61 263.07,-446.61 266.26,-445.04 264.43,-450.45 270.72,-442.85" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="276.12" cy="-440.21" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="329.6,-408.94 333.57,-417.02 331.95,-417.82 327.99,-409.74 329.6,-408.94" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="332.39,-412.59 328.35,-414.57" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="325.56,-410.93 329.53,-419.01 327.91,-419.8 323.95,-411.72 325.56,-410.93" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="328.35,-414.57 324.32,-416.55" />
+</g>
+
+<g id="panel4-node8" class="node">
+<title>union_fenosa_supply_infos</title>
+<polygon fill="white" stroke="none" points="10.99,-596 10.99,-716.4 266.24,-716.4 266.24,-596 10.99,-596" />
+<polygon fill="#243b53" stroke="none" points="11.99,-682.2 11.99,-715.4 265.24,-715.4 265.24,-682.2 11.99,-682.2" />
+<text xml:space="preserve" text-anchor="start" x="18.99" y="-695" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">union_fenosa_supply_infos</text>
+<text xml:space="preserve" text-anchor="start" x="18.99" y="-666" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-663.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="18.99" y="-637.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-634.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">property_utility_id</text>
+<text xml:space="preserve" text-anchor="start" x="18.99" y="-609.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="63.7" y="-606.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<polygon fill="none" stroke="#8295a8" points="10.99,-596 10.99,-716.4 266.24,-716.4 266.24,-596 10.99,-596" />
+</g>
+
+<g id="panel4-edge4" class="edge">
+<title>union_fenosa_supply_infos-&gt;property_utilities</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M267.26,-587.56C273.49,-584.21 277.23,-582.2 277.23,-582.2 277.23,-582.2 335.53,-503.52 383.03,-439.42" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="259.68,-591.63 249.84,-592.33 255.31,-593.99 252.17,-595.68 252.17,-595.68 252.17,-595.68 255.31,-593.99 253.67,-599.46 259.68,-591.63" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="264.97" cy="-588.79" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="384.02,-430.52 391.25,-435.88 390.18,-437.33 382.95,-431.97 384.02,-430.52" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="388.17,-432.48 385.49,-436.09" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="381.34,-434.14 388.57,-439.5 387.5,-440.94 380.27,-435.58 381.34,-434.14" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="385.49,-436.09 382.82,-439.71" />
+</g>
+</g>
+
+</g>
+</g>
+<g id="detail-6" transform="translate(0 6904)">
+<rect x="0" y="0" width="1680" height="874" rx="0" fill="#fff" stroke="none" stroke-width="1.4"/>
+<rect x="48" y="14" width="1584" height="852" rx="10" fill="#fff" stroke="#93a4b7" stroke-width="1.6"/>
+<rect x="72" y="34" width="44" height="27" rx="4" fill="#243b53" stroke="none" stroke-width="1.4"/>
+<text x="94" y="53" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="0">06</text>
+<text x="133" y="57" font-size="28" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">Media and documents</text>
+<text x="73" y="88" font-size="16" font-weight="400" fill="#4a6379" text-anchor="start" letter-spacing="0">Active Storage, galleries and generated documents</text>
+<text x="1608" y="87" font-size="16" font-weight="400" fill="#4a6379" text-anchor="end" letter-spacing="0">7 schema tables</text>
+<path d="M48 106L1632 106" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<g transform="translate(367.50 123) scale(1.0500) translate(-1.0 -1.0)">
+<g xmlns="http://www.w3.org/2000/svg" id="panel5-graph0" class="graph" transform="scale(1 1) rotate(0) translate(5.44 685.64)">
+<title>erd</title>
+
+<g id="panel5-node1" class="node">
+<title>active_storage_attachments</title>
+<polygon fill="white" stroke="none" points="13.34,-184.8 13.34,-305.2 283.04,-305.2 283.04,-184.8 13.34,-184.8" />
+<polygon fill="#243b53" stroke="none" points="14.34,-271 14.34,-304.2 282.04,-304.2 282.04,-271 14.34,-271" />
+<text xml:space="preserve" text-anchor="start" x="21.34" y="-283.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">active_storage_attachments</text>
+<text xml:space="preserve" text-anchor="start" x="21.34" y="-254.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="102.41" y="-252" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="21.34" y="-226.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="102.41" y="-223.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">blob_id</text>
+<text xml:space="preserve" text-anchor="start" x="21.34" y="-198" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="102.41" y="-195.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">record_type, record_id</text>
+<polygon fill="none" stroke="#8295a8" points="13.34,-184.8 13.34,-305.2 283.04,-305.2 283.04,-184.8 13.34,-184.8" />
+</g>
+
+<g id="panel5-node2" class="node">
+<title>active_storage_blobs</title>
+<polygon fill="white" stroke="none" points="370.48,-199 370.48,-291 575.23,-291 575.23,-199 370.48,-199" />
+<polygon fill="#243b53" stroke="none" points="371.48,-256.8 371.48,-290 574.23,-290 574.23,-256.8 371.48,-256.8" />
+<text xml:space="preserve" text-anchor="start" x="378.48" y="-269.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">active_storage_blobs</text>
+<text xml:space="preserve" text-anchor="start" x="378.48" y="-240.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="455.2" y="-237.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="378.48" y="-212.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="455.2" y="-209.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">key, filename</text>
+<polygon fill="none" stroke="#8295a8" points="370.48,-199 370.48,-291 575.23,-291 575.23,-199 370.48,-199" />
+</g>
+
+<g id="panel5-edge5" class="edge">
+<title>active_storage_attachments-&gt;active_storage_blobs</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M300.84,-245C321.45,-245 342.27,-245 361.95,-245" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="292.23,-245 283.23,-240.95 287.26,-245 283.69,-245 283.69,-245 283.69,-245 287.26,-245 283.23,-249.05 292.23,-245" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="298.23" cy="-245" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="370.01,-240.5 370.01,-249.5 368.21,-249.5 368.21,-240.5 370.01,-240.5" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="370.91,-245 366.41,-245" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="365.51,-240.5 365.51,-249.5 363.71,-249.5 363.71,-240.5 365.51,-240.5" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="366.41,-245 361.91,-245" />
+</g>
+
+<g id="panel5-node3" class="node">
+<title>active_storage_variant_records</title>
+<polygon fill="white" stroke="none" points="0,-334 0,-426 296.38,-426 296.38,-334 0,-334" />
+<polygon fill="#243b53" stroke="none" points="1,-391.8 1,-425 295.38,-425 295.38,-391.8 1,-391.8" />
+<text xml:space="preserve" text-anchor="start" x="8" y="-404.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">active_storage_variant_records</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-375.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="141.3" y="-372.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-347.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="141.3" y="-344.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">blob_id</text>
+<polygon fill="none" stroke="#8295a8" points="0,-334 0,-426 296.38,-426 296.38,-334 0,-334" />
+</g>
+
+<g id="panel5-edge4" class="edge">
+<title>active_storage_variant_records-&gt;active_storage_blobs</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M278.71,-327.2C289.5,-322.8 296.38,-320 296.38,-320 296.38,-320 326.85,-306.98 362.4,-291.78" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="270.63,-330.49 260.77,-330.14 266.03,-332.37 262.73,-333.71 262.73,-333.71 262.73,-333.71 266.03,-332.37 263.83,-337.64 270.63,-330.49" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="276.2" cy="-328.23" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="367.94,-284.52 371.48,-292.79 369.83,-293.5 366.29,-285.23 367.94,-284.52" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="370.54,-288.3 366.4,-290.07" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="363.81,-286.29 367.34,-294.56 365.69,-295.27 362.15,-286.99 363.81,-286.29" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="366.4,-290.07 362.26,-291.84" />
+</g>
+
+<g id="panel5-node4" class="node">
+<title>galleries</title>
+<polygon fill="white" stroke="none" points="351.38,-14.6 351.38,-163.4 594.33,-163.4 594.33,-14.6 351.38,-14.6" />
+<polygon fill="#243b53" stroke="none" points="352.38,-129.2 352.38,-162.4 593.33,-162.4 593.33,-129.2 352.38,-129.2" />
+<text xml:space="preserve" text-anchor="start" x="359.38" y="-142" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">galleries</text>
+<text xml:space="preserve" text-anchor="start" x="359.38" y="-113" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="402.82" y="-110.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="359.38" y="-84.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="402.82" y="-81.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">cover_image_id</text>
+<text xml:space="preserve" text-anchor="start" x="359.38" y="-56.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="402.82" y="-53.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="359.38" y="-27.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="402.82" y="-25" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">imageable_type, imageable_id</text>
+<polygon fill="none" stroke="#8295a8" points="351.38,-14.6 351.38,-163.4 594.33,-163.4 594.33,-14.6 351.38,-14.6" />
+</g>
+
+<g id="panel5-node6" class="node">
+<title>images</title>
+<polygon fill="white" stroke="none" points="649.33,-0.4 649.33,-177.6 890.29,-177.6 890.29,-0.4 649.33,-0.4" />
+<polygon fill="#243b53" stroke="none" points="650.33,-143.4 650.33,-176.6 889.29,-176.6 889.29,-143.4 650.33,-143.4" />
+<text xml:space="preserve" text-anchor="start" x="657.33" y="-156.2" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">images</text>
+<text xml:space="preserve" text-anchor="start" x="657.33" y="-127.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="703.39" y="-124.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="657.33" y="-98.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="703.39" y="-96" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">image_asset_id</text>
+<text xml:space="preserve" text-anchor="start" x="657.33" y="-70.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="703.39" y="-67.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">gallery_id</text>
+<text xml:space="preserve" text-anchor="start" x="657.33" y="-42" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="703.39" y="-39.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="657.33" y="-13.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="703.39" y="-10.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">legacy_attachment_id</text>
+<polygon fill="none" stroke="#8295a8" points="649.33,-0.4 649.33,-177.6 890.29,-177.6 890.29,-0.4 649.33,-0.4" />
+</g>
+
+<g id="panel5-edge1" class="edge">
+<title>galleries-&gt;images</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M612.43,-78.14C620.52,-78.11 628.64,-78.12 636.71,-78.18" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="603.72,-78.21 594.69,-74.24 598.75,-78.25 595.19,-78.28 595.19,-78.28 595.19,-78.28 598.75,-78.25 594.75,-82.34 603.72,-78.21" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="609.72" cy="-78.16" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="648.9,-73.8 648.81,-82.8 647.01,-82.78 647.1,-73.78 648.9,-73.8" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="649.76,-78.31 645.26,-78.26" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="640.96" cy="-78.22" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel5-node5" class="node">
+<title>image_assets</title>
+<polygon fill="white" stroke="none" points="36.2,-6.6 36.2,-155.4 260.18,-155.4 260.18,-6.6 36.2,-6.6" />
+<polygon fill="#243b53" stroke="none" points="37.2,-121.2 37.2,-154.4 259.18,-154.4 259.18,-121.2 37.2,-121.2" />
+<text xml:space="preserve" text-anchor="start" x="44.2" y="-134" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">image_assets</text>
+<text xml:space="preserve" text-anchor="start" x="44.2" y="-105" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="73.28" y="-102.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="44.2" y="-76.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="73.28" y="-73.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="44.2" y="-48.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="73.28" y="-45.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">blob_id</text>
+<text xml:space="preserve" text-anchor="start" x="44.2" y="-19.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="73.28" y="-17" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">upload_gallery_id</text>
+<polygon fill="none" stroke="#8295a8" points="36.2,-6.6 36.2,-155.4 260.18,-155.4 260.18,-6.6 36.2,-6.6" />
+</g>
+
+<g id="panel5-edge6" class="edge">
+<title>image_assets-&gt;active_storage_blobs</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M275.8,-145.36C308.34,-161.89 342.85,-179.43 373.7,-195.11" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="268.22,-141.5 262.03,-133.81 263.79,-139.25 260.61,-137.63 260.61,-137.63 260.61,-137.63 263.79,-139.25 258.36,-141.03 268.22,-141.5" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="273.57" cy="-144.22" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="382.7,-194.64 378.62,-202.66 377.01,-201.84 381.09,-193.82 382.7,-194.64" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="381.46,-199.06 377.45,-197.02" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="378.69,-192.6 374.61,-200.62 373,-199.81 377.08,-191.78 378.69,-192.6" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="377.45,-197.02 373.44,-194.98" />
+</g>
+
+<g id="panel5-edge7" class="edge">
+<title>image_assets-&gt;galleries</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M277.71,-84.19C297.66,-84.68 318.32,-85.19 338.38,-85.69" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="269.25,-83.98 260.35,-79.7 264.28,-83.85 260.72,-83.77 260.72,-83.77 260.72,-83.77 264.28,-83.85 260.15,-87.8 269.25,-83.98" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="275.25" cy="-84.13" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="350.68,-81.49 350.46,-90.49 348.66,-90.45 348.88,-81.45 350.68,-81.49" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="351.47,-86.02 346.97,-85.9" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="342.67" cy="-85.8" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel5-edge3" class="edge">
+<title>images-&gt;galleries</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M631.88,-99.85C622.22,-99.9 612.49,-99.88 602.87,-99.8" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="640.29,-99.78 649.32,-103.75 645.26,-99.73 648.82,-99.7 648.82,-99.7 648.82,-99.7 645.26,-99.73 649.25,-95.65 640.29,-99.78" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="634.28" cy="-99.83" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="595.1,-104.22 595.2,-95.22 597,-95.24 596.9,-104.24 595.1,-104.22" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="594.25,-99.71 598.75,-99.76" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="599.6,-104.27 599.7,-95.27 601.5,-95.28 601.4,-104.28 599.6,-104.27" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="598.75,-99.76 603.25,-99.8" />
+</g>
+
+<g id="panel5-edge2" class="edge">
+<title>images-&gt;image_assets</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M633.38,-19.92C610.69,-8.34 594.33,0 594.33,0 594.33,0 351.38,0 351.38,0 351.38,0 312.17,-15.71 268.28,-33.29" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="641.11,-23.86 647.28,-31.56 645.53,-26.12 648.71,-27.73 648.71,-27.73 648.71,-27.73 645.53,-26.12 650.96,-24.34 641.11,-23.86" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="635.76" cy="-21.13" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="262.55,-40.43 259.2,-32.08 260.87,-31.41 264.22,-39.76 262.55,-40.43" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="260.04,-36.59 264.22,-34.92" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="266.73,-38.76 263.38,-30.4 265.05,-29.74 268.4,-38.09 266.73,-38.76" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="264.22,-34.92 268.4,-33.24" />
+</g>
+
+<g id="panel5-node7" class="node">
+<title>generated_documents</title>
+<polygon fill="white" stroke="none" points="488.99,-559.8 488.99,-680.2 778.29,-680.2 778.29,-559.8 488.99,-559.8" />
+<polygon fill="#243b53" stroke="none" points="489.99,-646 489.99,-679.2 777.29,-679.2 777.29,-646 489.99,-646" />
+<text xml:space="preserve" text-anchor="start" x="496.99" y="-658.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">generated_documents</text>
+<text xml:space="preserve" text-anchor="start" x="496.99" y="-629.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="540.44" y="-627" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="496.99" y="-601.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="540.44" y="-598.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="496.99" y="-573" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="540.44" y="-570.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">documentable_type, documentable_id</text>
+<polygon fill="none" stroke="#8295a8" points="488.99,-559.8 488.99,-680.2 778.29,-680.2 778.29,-559.8 488.99,-559.8" />
+</g>
+</g>
+
+</g>
+</g>
+<g id="detail-7" transform="translate(0 7793)">
+<rect x="0" y="0" width="1680" height="781" rx="0" fill="#fff" stroke="none" stroke-width="1.4"/>
+<rect x="48" y="14" width="1584" height="759" rx="10" fill="#fff" stroke="#93a4b7" stroke-width="1.6"/>
+<rect x="72" y="34" width="44" height="27" rx="4" fill="#243b53" stroke="none" stroke-width="1.4"/>
+<text x="94" y="53" font-size="14" font-weight="700" fill="#fff" text-anchor="middle" letter-spacing="0">07</text>
+<text x="133" y="57" font-size="28" font-weight="700" fill="#20364d" text-anchor="start" letter-spacing="0">Search and schema support</text>
+<text x="73" y="88" font-size="16" font-weight="400" fill="#4a6379" text-anchor="start" letter-spacing="0">Indexing, tagging, audit history and Rails metadata</text>
+<text x="1608" y="87" font-size="16" font-weight="400" fill="#4a6379" text-anchor="end" letter-spacing="0">6 schema tables</text>
+<path d="M48 106L1632 106" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<g transform="translate(446.77 123) scale(1.0500) translate(-1.0 -1.0)">
+<g xmlns="http://www.w3.org/2000/svg" id="panel6-graph0" class="graph" transform="scale(1 1) rotate(0) translate(5.44 597.44)">
+<title>erd</title>
+
+<g id="panel6-node1" class="node">
+<title>search_documents</title>
+<polygon fill="white" stroke="none" points="366.6,-449.8 366.6,-570.2 615.05,-570.2 615.05,-449.8 366.6,-449.8" />
+<polygon fill="#243b53" stroke="none" points="367.6,-536 367.6,-569.2 614.05,-569.2 614.05,-536 367.6,-536" />
+<text xml:space="preserve" text-anchor="start" x="374.6" y="-548.8" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">search_documents</text>
+<text xml:space="preserve" text-anchor="start" x="374.6" y="-519.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="418.04" y="-517" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="374.6" y="-491.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="418.04" y="-488.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">company_id  →  companies.id</text>
+<text xml:space="preserve" text-anchor="start" x="374.6" y="-463" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="418.04" y="-460.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">searchable_type, searchable_id</text>
+<polygon fill="none" stroke="#8295a8" points="366.6,-449.8 366.6,-570.2 615.05,-570.2 615.05,-449.8 366.6,-449.8" />
+</g>
+
+<g id="panel6-node2" class="node">
+<title>tags</title>
+<polygon fill="white" stroke="none" points="544.38,-228 544.38,-320 740.05,-320 740.05,-228 544.38,-228" />
+<polygon fill="#243b53" stroke="none" points="545.38,-285.8 545.38,-319 739.05,-319 739.05,-285.8 545.38,-285.8" />
+<text xml:space="preserve" text-anchor="start" x="552.38" y="-298.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">tags</text>
+<text xml:space="preserve" text-anchor="start" x="552.38" y="-269.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="598.44" y="-266.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="552.38" y="-241.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="598.44" y="-238.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">name, taggings_count</text>
+<polygon fill="none" stroke="#8295a8" points="544.38,-228 544.38,-320 740.05,-320 740.05,-228 544.38,-228" />
+</g>
+
+<g id="panel6-node3" class="node">
+<title>taggings</title>
+<polygon fill="white" stroke="none" points="266.59,-199.6 266.59,-348.4 489.38,-348.4 489.38,-199.6 266.59,-199.6" />
+<polygon fill="#243b53" stroke="none" points="267.59,-314.2 267.59,-347.4 488.38,-347.4 488.38,-314.2 267.59,-314.2" />
+<text xml:space="preserve" text-anchor="start" x="274.59" y="-327" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">taggings</text>
+<text xml:space="preserve" text-anchor="start" x="274.59" y="-298" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="318.03" y="-295.2" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="274.59" y="-269.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FK</text>
+<text xml:space="preserve" text-anchor="start" x="318.03" y="-266.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">tag_id</text>
+<text xml:space="preserve" text-anchor="start" x="274.59" y="-241.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="318.03" y="-238.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">taggable_type, taggable_id</text>
+<text xml:space="preserve" text-anchor="start" x="274.59" y="-212.8" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="318.03" y="-210" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">tagger_type, tagger_id</text>
+<polygon fill="none" stroke="#8295a8" points="266.59,-199.6 266.59,-348.4 489.38,-348.4 489.38,-199.6 266.59,-199.6" />
+</g>
+
+<g id="panel6-edge1" class="edge">
+<title>taggings-&gt;tags</title>
+<path fill="none" stroke="#52667a" stroke-width="1.4" d="M506.96,-274C515.31,-274 523.67,-274 531.92,-274" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="498.52,-274 489.52,-269.95 493.56,-274 489.99,-274 489.99,-274 489.99,-274 493.56,-274 489.52,-278.05 498.52,-274" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="504.53" cy="-274" rx="3.6" ry="3.6" />
+<polygon fill="#52667a" stroke="#52667a" stroke-width="1.4" points="543.86,-269.5 543.86,-278.5 542.06,-278.5 542.06,-269.5 543.86,-269.5" />
+<polyline fill="none" stroke="#52667a" stroke-width="1.4" points="544.76,-274 540.26,-274" />
+<ellipse fill="none" stroke="#52667a" stroke-width="1.4" cx="535.96" cy="-274" rx="3.6" ry="3.6" />
+</g>
+
+<g id="panel6-node4" class="node">
+<title>versions</title>
+<polygon fill="white" stroke="none" points="294,0 294,-92 465.05,-92 465.05,0 294,0" />
+<polygon fill="#243b53" stroke="none" points="295,-57.8 295,-91 464.05,-91 464.05,-57.8 295,-57.8" />
+<text xml:space="preserve" text-anchor="start" x="302" y="-70.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">versions</text>
+<text xml:space="preserve" text-anchor="start" x="302" y="-41.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="345.45" y="-38.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">id</text>
+<text xml:space="preserve" text-anchor="start" x="302" y="-13.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">POLY</text>
+<text xml:space="preserve" text-anchor="start" x="345.45" y="-10.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">item_type, item_id</text>
+<polygon fill="none" stroke="#8295a8" points="294,0 294,-92 465.05,-92 465.05,0 294,0" />
+</g>
+
+<g id="panel6-node5" class="node">
+<title>ar_internal_metadata</title>
+<polygon fill="white" stroke="none" points="56.77,-500 56.77,-592 265.05,-592 265.05,-500 56.77,-500" />
+<polygon fill="#243b53" stroke="none" points="57.77,-557.8 57.77,-591 264.05,-591 264.05,-557.8 57.77,-557.8" />
+<text xml:space="preserve" text-anchor="start" x="64.77" y="-570.6" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">ar_internal_metadata</text>
+<text xml:space="preserve" text-anchor="start" x="64.77" y="-541.6" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="167.55" y="-538.8" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">key</text>
+<text xml:space="preserve" text-anchor="start" x="64.77" y="-513.2" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">FIELD</text>
+<text xml:space="preserve" text-anchor="start" x="167.55" y="-510.4" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">value</text>
+<polygon fill="none" stroke="#8295a8" points="56.77,-500 56.77,-592 265.05,-592 265.05,-500 56.77,-500" />
+</g>
+
+<g id="panel6-node6" class="node">
+<title>schema_migrations</title>
+<polygon fill="white" stroke="none" points="0,-25.2 0,-88.8 190.05,-88.8 190.05,-25.2 0,-25.2" />
+<polygon fill="#243b53" stroke="none" points="1,-54.6 1,-87.8 189.05,-87.8 189.05,-54.6 1,-54.6" />
+<text xml:space="preserve" text-anchor="start" x="8" y="-67.4" font-family="DejaVu Sans" font-weight="bold" font-size="16.00" fill="#ffffff">schema_migrations</text>
+<text xml:space="preserve" text-anchor="start" x="8" y="-38.4" font-family="DejaVu Sans" font-weight="bold" font-size="10.00" fill="#4a6379">PK</text>
+<text xml:space="preserve" text-anchor="start" x="87.59" y="-35.6" font-family="DejaVu Sans" font-size="12.00" fill="#23384c">version</text>
+<polygon fill="none" stroke="#8295a8" points="0,-25.2 0,-88.8 190.05,-88.8 190.05,-25.2 0,-25.2" />
+</g>
+</g>
+
+</g>
+</g>
+<g transform="translate(0 8589)"><rect x="0" y="0" width="1680" height="88" rx="0" fill="#fff" stroke="none" stroke-width="1.4"/>
+<path d="M48 7L1632 7" fill="none" stroke="#dce4ec" stroke-width="1.3"/>
+<text x="48" y="35" font-size="16" font-weight="400" fill="#4a6379" text-anchor="start" letter-spacing="0">FK to companies · Repeated company ownership foreign keys are written in each card.</text>
+<text x="48" y="63" font-size="16" font-weight="400" fill="#4a6379" text-anchor="start" letter-spacing="0">REF · Table detailed in another panel.   POLY · Polymorphic key pair.   FIELD · Selected column without a declared FK in this schema.</text></g>
+</svg>
